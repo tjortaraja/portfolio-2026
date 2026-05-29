@@ -480,6 +480,9 @@ body {
 .role-copy-grid p {
   margin-bottom: 0;
 }
+.role-copy-grid p + p {
+  margin-top: 0.9rem;
+}
 .role-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
 .role-list li {
   font-size: 0.87rem;
