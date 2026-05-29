@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain in Hand — TJ Anderson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="case-nav">
+    <a href="index.html" class="nav-back">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+      Back to portfolio
+    </a>
+    <span class="nav-title">Brain in Hand</span>
+    <ul class="nav-anchors">
+      <li><a href="#context">Context</a></li>
+      <li><a href="#found">What I Found</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#outcomes">Outcomes</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <!-- HERO IMAGE -->
+  <div class="cs-hero-image">
+    <div class="cs-hero-image-inner">
+      <div class="img-ph dark tall fade-in">
+        <div class="img-ph-icon">🖼</div>
+        <p class="img-ph-title">Hero image</p>
+        <p class="img-ph-note">A strong opening image for this case study — consider a screenshot of the unified profile, or an abstract representation of three disconnected systems becoming one.</p>
+      </div>
+    </div>
+  </div>
+
+  <header class="cs-hero">
+    <div class="cs-hero-inner fade-in">
+      <p class="eyebrow-sm">Case Study · Brain in Hand · 2023</p>
+      <h1 class="cs-title">From manual chaos to a single source of truth</h1>
+      <p class="cs-subtitle">A B2B SaaS platform serving 25,000 neurodivergent individuals across UK universities and local authorities had a data problem. The real cost was carried by the people who had to work around it every day.</p>
+      <div class="cs-meta">
+        <div><p class="cs-meta-label">Role</p><p class="cs-meta-value">Lead Product Designer</p></div>
+        <div><p class="cs-meta-label">Sector</p><p class="cs-meta-value">B2B SaaS · Higher Education · Local Government</p></div>
+        <div><p class="cs-meta-label">Team</p><p class="cs-meta-value">PM, Business Analyst, Dev Team, CST Lead</p></div>
+        <div><p class="cs-meta-label">Timeline</p><p class="cs-meta-value">March – September 2023 · 6 months</p></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEXT -->
+  <section class="cs-section bg-surface" id="context">
+    <div class="cs-inner fade-in">
+      <p class="section-eyebrow">The Context</p>
+      <h2 class="section-heading">The tools had multiplied.<br>The truth had not.</h2>
+      <div class="divider"></div>
+      <div class="two-col">
+        <div>
+          <p class="body-text">Brain in Hand is a regulated, cloud-based platform used by universities and local authorities to support neurodivergent individuals through daily life. When someone is referred to the service, a 90-day registration window opens — and the Customer Service Team must coordinate that user's journey across multiple systems with no automated status tracking.</p>
+          <p class="body-text">Data had grown organically across three separate platforms. None of them talked to each other. Changing privacy laws required migrating user data from US-hosted servers to UK infrastructure — a compliance imperative that made the existing architecture unsustainable.</p>
+          <p class="body-text">The core problem wasn't a lack of data. It was that the data was <strong>invisible and disconnected</strong> — and the people who needed it most were paying the price.</p>
+        </div>
+        <div>
+          <!-- Three systems image placeholder -->
+          <div class="img-ph tall">
+            <div class="img-ph-icon">🖼</div>
+            <p class="img-ph-title">Before — three separate systems</p>
+            <p class="img-ph-note">Screenshot or diagram of the three system views (Insightly, FreshDesk, Brain in Hand platform) the CST navigated for every single user lookup.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- System architecture -->
+      <div class="system-arch">
+        <div class="arch-box">
+          <p class="arch-label">CRM</p>
+          <p class="arch-tool">Insightly</p>
+          <p class="arch-desc">Referral source, org details, contact records</p>
+        </div>
+        <div class="arch-box">
+          <p class="arch-label">Support</p>
+          <p class="arch-tool">FreshDesk</p>
+          <p class="arch-desc">Support tickets, communication history, case notes</p>
+        </div>
+        <div class="arch-box">
+          <p class="arch-label">Platform</p>
+          <p class="arch-tool">Brain in Hand</p>
+          <p class="arch-desc">Registration status, package type, licence data</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE DEFINING MOMENT -->
+  <div class="big-quote-wrap fade-in">
+    <span class="big-q-mark">"</span>
+    <p class="big-q-text">We give 90 days for a registration to be completed. As there are no notifications about status updates, it means constant checking. And the days remaining have to be calculated manually each time.</p>
+    <p class="big-q-cite">— Jo, CST Lead · observed during a shadowing session</p>
+  </div>
+
+  <!-- WHAT I FOUND -->
+  <section class="cs-section bg-light" id="found">
+    <div class="cs-inner wide fade-in">
+      <p class="section-eyebrow">What I Found</p>
+      <h2 class="section-heading">The CST weren't inefficient.<br>The system had failed them.</h2>
+      <div class="divider"></div>
+      <div class="two-col">
+        <div>
+          <p class="body-text">I didn't rely on process documentation. I spent several sessions shadowing the CST as they managed active user registrations in real time — watching their screens, listening to how they described their work, noting where friction was so normalised they'd stopped seeing it.</p>
+          <p class="body-text">What I witnessed was a team of highly skilled professionals who had built a sophisticated system of workarounds: personal spreadsheets for tracking 90-day windows, sticky notes for case status, manual calculations repeated every time someone checked a user's progress. <strong>This wasn't inefficiency. It was competence meeting an inadequate system.</strong></p>
+          <div class="context-pair" style="margin-top:1.5rem;">
+            <div class="context-box navy">
+              <p class="context-label">Product Context</p>
+              <p class="context-text">The CST had built a sophisticated manual workaround system — spreadsheets, sticky notes, calculated countdowns. This was their actual workflow.</p>
+            </div>
+            <div class="context-box">
+              <p class="context-label">Design Principle</p>
+              <p class="context-text">The workarounds aren't problems to design around — they are precise requirements that no PRD had captured. Design for them explicitly.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="stats-row" style="grid-template-columns:1fr 1fr;margin:0;">
+            <div class="stat-card"><div class="stat-number">90</div><div class="stat-label">Day window, calculated manually each time</div></div>
+            <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">Separate tools for every user lookup</div></div>
+            <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Automated notifications or status alerts</div></div>
+            <div class="stat-card"><div class="stat-number">25k</div><div class="stat-label">Users managed across this process</div></div>
+          </div>
+          <!-- Findings images placeholder -->
+          <div class="img-ph" style="margin-top:1.2rem;">
+            <div class="img-ph-icon">🖼</div>
+            <p class="img-ph-title">Research findings images</p>
+            <p class="img-ph-note">Photos from shadowing sessions, whiteboard synthesis, affinity mapping, or annotated screenshots of the CST's workarounds.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE ANY SCREEN WAS DRAWN -->
+  <section class="cs-section bg-surface">
+    <div class="cs-inner wide fade-in">
+      <p class="section-eyebrow">Before Any Screen Was Drawn</p>
+      <h2 class="section-heading">The design work that nobody sees — but everything depends on.</h2>
+      <div class="divider"></div>
+      <div class="two-col even">
+        <div>
+          <p class="body-text">In B2B SaaS, the temptation is to jump to interface design. The real work here came first: understanding the data, mapping the system architecture, and creating a shared foundation that any interface would be built on.</p>
+          <p class="body-text">I worked with our Business Analyst to cross-reference data from all three platforms, building a unified data model — the blueprint for what a single source of truth would actually contain, and the requirement for GDPR-compliant UK data migration.</p>
+          <p class="body-text">Content mapping grouped every data point a CST member might need into four logical clusters — registration, referral, package, and support — which directly informed the new information architecture.</p>
+          <div class="context-pair" style="margin-top:1rem;">
+            <div class="context-box navy">
+              <p class="context-label">Product Context</p>
+              <p class="context-text">The data model had to be clean before the interface could be trustworthy. Weeks mapping data with the BA weren't a precursor to the design — they were design.</p>
+            </div>
+            <div class="context-box">
+              <p class="context-label">Design Principle</p>
+              <p class="context-text">Cross-functional collaboration at this level of technical depth is what makes an interface genuinely reliable. The IA is only as good as the data beneath it.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- Journey / flow work placeholder -->
+          <div class="img-ph tall">
+            <div class="img-ph-icon">🖼</div>
+            <p class="img-ph-title">Journey and flow work</p>
+            <p class="img-ph-note">Workflow mapping, journey diagrams, data model sketches, or the IA work that structured the four data clusters — before any screens were drawn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE DESIGN -->
+  <section class="cs-section bg-light" id="design">
+    <div class="cs-inner wide fade-in">
+      <p class="section-eyebrow">The Design</p>
+      <h2 class="section-heading">One profile. Everything a CST member needs.</h2>
+      <div class="divider"></div>
+      <p class="body-text">The unified user profile was designed to be the single source of truth — a hub where CST members could see everything and take action without switching tools. Two views served two distinct modes of working.</p>
+      <div class="card-grid-2">
+        <div class="design-card">
+          <div class="design-card-head">
+            <p class="design-card-tag">Status at a Glance</p>
+            <h3 class="design-card-title">Quick View</h3>
+          </div>
+          <div class="design-card-body">Born from a single piece of CST feedback: "I need to see registration status without opening the full profile." A light-touch overlay surfacing the 90-day countdown, case owner, registration status, and key actions — eliminating the most frequent manual lookup task in seconds.</div>
+        </div>
+        <div class="design-card">
+          <div class="design-card-head" style="background:var(--sage-mid);">
+            <p class="design-card-tag">Case Management</p>
+            <h3 class="design-card-title">Full Profile</h3>
+          </div>
+          <div class="design-card-body">The single source of truth. Organised into four sections — user summary, registration timeline, package details, and support history — in the order CST members told us they actually moved through a case. Edits happen within modals to keep users in context.</div>
+        </div>
+      </div>
+
+      <!-- Quick View and Profile placeholder -->
+      <div class="img-ph wide" style="margin-top:1.5rem;">
+        <div class="img-ph-icon">🖼</div>
+        <p class="img-ph-title">Quick View overlay and top of Full Profile</p>
+        <p class="img-ph-note">The Quick View overlay showing the 90-day countdown and key actions, alongside the top of the unified Full Profile screen — the single source of truth for the CST.</p>
+      </div>
+
+      <h3 style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.05rem;color:var(--navy);margin:2.5rem 0 1rem;">Three decisions worth naming.</h3>
+      <div class="decision-list">
+        <div class="decision-item"><p class="decision-label">Accessibility</p><p class="decision-text">WCAG-compliant by default. Given Brain in Hand's neurodivergent user base, colour contrast was validated against WCAG standards throughout. Accessibility wasn't an audit step — it was a design input from day one.</p></div>
+        <div class="decision-item"><p class="decision-label">Technical Scoping</p><p class="decision-text">Drawers explored, modals chosen. I explored drawers as an alternative for in-context editing. Modals were chosen to reduce new component development during a Vuetify upgrade period. A deliberate trade-off — not a default.</p></div>
+        <div class="decision-item"><p class="decision-label">Phasing</p><p class="decision-text">Dashboard scoped out — intentionally. A future dashboard view showing case ownership, outstanding tasks, and countdown summaries was explored and deferred due to timeline. The data model we built fully supports it. A visible decision, not a default.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALIDATION -->
+  <section class="cs-section bg-mid">
+    <div class="cs-inner wide fade-in">
+      <p class="section-eyebrow">Validation</p>
+      <h2 class="section-heading">The hypothesis: a unified profile would eliminate manual status tracking.</h2>
+      <div class="divider"></div>
+      <div class="val-stack">
+        <div class="val-item"><span class="val-tag tag-v">✓ Validated</span><p class="val-text"><strong>Quick View understood immediately.</strong> CST members could check registration status in seconds. The interaction model required no explanation.</p></div>
+        <div class="val-item"><span class="val-tag tag-v">✓ Validated</span><p class="val-text"><strong>90-day counter eliminated manual calculation.</strong> The single most time-consuming daily task was completely eliminated. Every participant noticed this without prompting.</p></div>
+        <div class="val-item"><span class="val-tag tag-r">△ Refined</span><p class="val-text"><strong>Multi-field editing needed refinement.</strong> Some users wanted to edit multiple fields in a single session. This informed an iteration grouping related fields more consistently within editing modals.</p></div>
+        <div class="val-item"><span class="val-tag tag-r">△ Refined</span><p class="val-text"><strong>Profile–ticket link not immediately obvious.</strong> The connection between user profiles and support tickets wasn't immediately visible — a documented requirement for the future FreshDesk integration phase.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="cs-section bg-surface" id="outcomes">
+    <div class="cs-inner fade-in">
+      <p class="section-eyebrow">What Changed</p>
+      <h2 class="section-heading">From chaos to clarity — and a foundation built to last.</h2>
+      <div class="divider"></div>
+      <ul class="outcomes-list">
+        <li><div class="out-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><div class="out-text"><strong>Manual status tracking eliminated</strong>CST members no longer maintain personal spreadsheets or sticky notes for registration countdowns. The three-system lookup that defined the old workflow no longer exists.</div></li>
+        <li><div class="out-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><div class="out-text"><strong>GDPR-compliant data foundation</strong>UK data migration resolved the compliance requirement that had made the existing architecture unsustainable.</div></li>
+        <li><div class="out-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><div class="out-text"><strong>White-label ready</strong>The model supports white-labelled instances for individual university and local authority clients.</div></li>
+        <li><div class="out-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><div class="out-text"><strong>Foundation for the dashboard</strong>The data model fully supports the case management dashboard the CST identified as their highest-priority unmet need.</div></li>
+      </ul>
+
+      <!-- Full flow image placeholder -->
+      <div class="img-ph wide" style="margin-top:1.5rem;">
+        <div class="img-ph-icon">🖼</div>
+        <p class="img-ph-title">The new unified flow — end to end</p>
+        <p class="img-ph-note">The complete screen flow: from search to status check to profile update — all in one view. Show the before/after contrast if possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFLECTIONS -->
+  <section class="cs-section bg-light">
+    <div class="cs-inner wide fade-in">
+      <p class="section-eyebrow">What I Carry Forward</p>
+      <h2 class="section-heading">The things this project made me certain about</h2>
+      <div class="divider"></div>
+      <div class="reflect-grid">
+        <div class="reflect-card key"><div class="reflect-num">01</div><h4 class="reflect-title">The dashboard I should have fought harder for</h4><p class="reflect-body">Every discovery conversation pointed toward a higher-level view — case ownership, outstanding tasks, days remaining across all active registrations. If I were starting again, I'd advocate for even a minimal viable dashboard in the initial scope.</p></div>
+        <div class="reflect-card"><div class="reflect-num">02</div><h4 class="reflect-title">Shadowing is non-negotiable in internal tool design</h4><p class="reflect-body">Jo's quote shaped the entire project — and I only heard it because I was in the room watching real work happen. The workarounds CST members had built weren't problems to design around — they were precise requirements that no PRD had captured.</p></div>
+        <div class="reflect-card"><div class="reflect-num">03</div><h4 class="reflect-title">Data modelling with a BA is design work</h4><p class="reflect-body">The unified profile only works because the underlying data model is clean. The weeks mapping data weren't a precursor to the design — they were design. Cross-functional collaboration at that depth is what enables an interface to be genuinely trustworthy.</p></div>
+        <div class="reflect-card"><div class="reflect-num">04</div><h4 class="reflect-title">Trade-offs should be visible, not defaults</h4><p class="reflect-body">Parking the dashboard, deferring email integration, choosing modals over drawers — these were the right calls for delivery. What matters is that they were deliberate decisions, documented and communicated, not things that just fell out of scope.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cs-footer">
+    <div class="cs-footer-inner">
+      <div class="cs-credit"><strong>TJ Anderson</strong>Lead Product Designer · Brain in Hand · B2B SaaS · 2023</div>
+      <div style="display:flex;flex-direction:column;gap:1.2rem;align-items:flex-end;">
+        <div>
+          <p class="cs-next-label">Next case study</p>
+          <a href="penny.html" class="cs-next-link">Designing the moment financial stress meets empathy <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
+        </div>
+        <div>
+          <p class="cs-next-label">Previous case study</p>
+          <a href="car-and-classic.html" class="cs-prev-link"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg> Loyalty without love</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
