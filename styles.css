@@ -669,7 +669,7 @@ body {
 .framework-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
-  gap: var(--case-block-gap);
+  gap: clamp(3.25rem, 5vw, 5.5rem);
   align-items: start;
   width: 100%;
   max-width: 1180px;
@@ -695,6 +695,9 @@ body {
   line-height: 1.85;
   max-width: 58ch;
   overflow-wrap: break-word;
+}
+.framework-copy p + p {
+  margin-top: 1.2rem;
 }
 .framework-image {
   width: 100%;
@@ -767,13 +770,13 @@ body {
 .card-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
+  gap: clamp(1.35rem, 2vw, 1.75rem);
   margin-top: var(--case-tight-gap);
 }
 .card-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
+  gap: clamp(1.35rem, 2vw, 1.75rem);
   margin-top: 2rem;
 }
 .insight-card {
@@ -805,7 +808,7 @@ body {
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
+  gap: clamp(1.35rem, 2vw, 1.75rem);
   margin-top: var(--case-tight-gap);
 }
 .step-card {
@@ -936,7 +939,7 @@ body {
 .reflect-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
+  gap: clamp(1.35rem, 2vw, 1.75rem);
   margin-top: 2.5rem;
 }
 .reflect-card {
@@ -1221,7 +1224,7 @@ body {
 .mvp-additions {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
+  gap: clamp(1.35rem, 2vw, 1.75rem);
   margin-top: var(--case-tight-gap);
 }
 .mvp-addition-card {
