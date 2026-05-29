@@ -1013,7 +1013,9 @@ body {
   padding: 1rem 4rem;
   border-top: 1px solid var(--border);
 }
-.case-top-link {
+a.case-top-link,
+a.case-top-link:link,
+a.case-top-link:visited {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1029,11 +1031,11 @@ body {
   padding: 0.25rem 0;
   transition: transform 0.2s ease, color 0.2s ease;
 }
-.case-top-link:hover {
+a.case-top-link:hover {
   transform: translateY(-2px);
   color: var(--sage-mid);
 }
-.case-top-link svg {
+a.case-top-link svg {
   flex: 0 0 auto;
   width: 14px;
   height: 14px;
