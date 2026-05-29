@@ -668,13 +668,17 @@ body {
 }
 .framework-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.72fr);
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
   gap: var(--case-block-gap);
   align-items: start;
-  margin: var(--case-section-y) 0 0;
+  width: 100%;
+  max-width: 1180px;
+  margin: var(--case-section-y) auto 0;
+  overflow: hidden;
 }
 .framework-copy {
-  max-width: 780px;
+  min-width: 0;
+  max-width: none;
 }
 .framework-copy h3 {
   font-family: 'Epilogue', sans-serif;
@@ -689,10 +693,13 @@ body {
   color: var(--mid);
   font-size: 1rem;
   line-height: 1.85;
-  max-width: 72ch;
+  max-width: 58ch;
+  overflow-wrap: break-word;
 }
 .framework-image {
-  width: min(100%, 480px);
+  width: 100%;
+  max-width: 420px;
+  min-width: 0;
   margin: 0;
   line-height: 0;
   justify-self: end;
@@ -1606,6 +1613,10 @@ body {
   .section-image-pair,
   .framework-section {
     grid-template-columns: 1fr;
+  }
+  .framework-image {
+    justify-self: start;
+    max-width: 520px;
   }
   .layered-image-stack {
     min-height: auto;
