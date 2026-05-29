@@ -1,5 +1,5 @@
 /* ============================================================
-   TJ Anderson — Portfolio
+   TJ Anderson - Portfolio
    Shared stylesheet · Epilogue + Karla · Midnight & Sage
    ============================================================ */
 
@@ -18,6 +18,9 @@
   --mid:        #4A5C52;
   --soft:       #8A9E94;
   --border:     #D4E0DA;
+  --case-section-y: clamp(5.75rem, 7vw, 7rem);
+  --case-block-gap: clamp(2.75rem, 4vw, 4rem);
+  --case-tight-gap: clamp(1.5rem, 2.5vw, 2.25rem);
 }
 
 html { scroll-behavior: smooth; }
@@ -365,7 +368,10 @@ body {
 }
 
 /* ── CASE STUDY SECTIONS ── */
-.cs-section { padding: 5rem 4rem; }
+.cs-section { padding: var(--case-section-y) 4rem; }
+.cs-section[id] {
+  scroll-margin-top: 5.25rem;
+}
 .cs-inner { max-width: 900px; margin: 0 auto; }
 .cs-inner.wide { max-width: 1200px; }
 
@@ -472,9 +478,9 @@ body {
   margin-bottom: 2.2rem;
 }
 .role-section-intro {
-  margin-bottom: 2.8rem;
+  margin-bottom: var(--case-block-gap);
   max-width: 1080px;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
 }
 .role-section-intro h3 {
   font-family: 'Epilogue', sans-serif;
@@ -514,7 +520,7 @@ body {
 
 .workshop-tabs {
   width: 100%;
-  margin: 0 0 1.5rem;
+  margin: 0;
 }
 .workshop-tab-list {
   display: flex;
@@ -578,8 +584,7 @@ body {
   object-fit: contain;
   object-position: center;
 }
-.workshop-slide-media .zoom-image-trigger,
-.framework-image-media .zoom-image-trigger {
+.workshop-slide-media .zoom-image-trigger {
   display: grid;
   place-items: center;
   height: 100%;
@@ -614,16 +619,14 @@ body {
   background: var(--surface);
   border-top: 1px solid var(--border);
 }
-.workshop-slide-copy strong,
-.framework-copy strong {
+.workshop-slide-copy strong {
   color: var(--sage-mid);
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.workshop-slide-copy span,
-.framework-copy span {
+.workshop-slide-copy span {
   color: var(--mid);
   font-size: 0.9rem;
   line-height: 1.6;
@@ -663,34 +666,41 @@ body {
   background: var(--sage-mid);
   opacity: 1;
 }
-.framework-image {
+.framework-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1.18fr);
-  align-items: stretch;
-  overflow: hidden;
-  width: 100%;
-  margin: 2.8rem 0 0;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface);
-  box-shadow: 0 18px 48px rgba(15,27,45,0.14);
-}
-.framework-image-media {
-  display: grid;
-  place-items: center;
-  background: var(--navy-mid);
-  padding: 1rem;
-}
-.framework-image-media .zoom-image-trigger {
-  background: transparent;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.72fr);
+  gap: var(--case-block-gap);
+  align-items: start;
+  margin: var(--case-section-y) 0 0;
 }
 .framework-copy {
-  align-content: center;
-  display: grid;
-  gap: 0.45rem;
-  padding: 1.35rem 1.45rem;
-  background: var(--surface);
-  border-left: 1px solid var(--border);
+  max-width: 780px;
+}
+.framework-copy h3 {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+.framework-copy p {
+  color: var(--mid);
+  font-size: 1rem;
+  line-height: 1.85;
+  max-width: 72ch;
+}
+.framework-image {
+  width: min(100%, 480px);
+  margin: 0;
+  line-height: 0;
+  justify-self: end;
+}
+.framework-image .zoom-image-trigger {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 18px 48px rgba(15,27,45,0.12);
 }
 
 /* ── STATS ── */
@@ -721,9 +731,9 @@ body {
 .research-context {
   display: grid;
   grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
-  gap: 2rem;
+  gap: var(--case-block-gap);
   align-items: center;
-  margin-top: 3rem;
+  margin-top: var(--case-block-gap);
 }
 .research-question-image img {
   height: 460px;
@@ -751,7 +761,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
-  margin-top: 2.5rem;
+  margin-top: var(--case-tight-gap);
 }
 .card-grid-2 {
   display: grid;
@@ -789,7 +799,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
-  margin-top: 2.5rem;
+  margin-top: var(--case-tight-gap);
 }
 .step-card {
   background: var(--surface);
@@ -832,7 +842,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-top: 2.5rem;
+  margin-top: var(--case-tight-gap);
 }
 .hyp-card { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
 .hyp-head { padding: 1.4rem 1.6rem; }
@@ -1018,7 +1028,7 @@ body {
 }
 .cs-next-link:hover, .cs-prev-link:hover { gap: 0.9rem; }
 
-/* ── HOME PAGE — HERO ── */
+/* ── HOME PAGE - HERO ── */
 .home-hero {
   min-height: 100vh;
   background: var(--navy);
@@ -1134,7 +1144,7 @@ body {
   display: block;
 }
 
-/* Filter panel — floating card, no bezel */
+/* Filter panel - floating card, no bezel */
 .cc-filter-panel {
   width: 200px;
   flex-shrink: 0;
@@ -1166,14 +1176,14 @@ body {
 .case-shot-stack {
   display: grid;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: var(--case-block-gap);
 }
 .mvp-context {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
-  gap: 2rem;
+  gap: var(--case-block-gap);
   align-items: center;
-  margin-top: 3rem;
+  margin-top: var(--case-block-gap);
 }
 .mvp-story-map {
   order: 2;
@@ -1205,7 +1215,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.2rem;
-  margin-top: 1.5rem;
+  margin-top: var(--case-tight-gap);
 }
 .mvp-addition-card {
   background: var(--surface);
@@ -1287,7 +1297,7 @@ body {
   line-height: 1;
 }
 .journey-tabs {
-  margin-top: 2rem;
+  margin-top: var(--case-block-gap);
 }
 .journey-tab-list {
   display: flex;
@@ -1383,7 +1393,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: var(--case-block-gap);
 }
 .journey-video-card {
   background: var(--sage-light);
@@ -1509,7 +1519,7 @@ body {
 .section-image-pair {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
-  gap: 3rem;
+  gap: var(--case-block-gap);
   align-items: start;
 }
 .section-side-image {
@@ -1593,7 +1603,8 @@ body {
   .case-shot-grid,
   .case-shot-grid.two-up,
   .journey-video-grid,
-  .section-image-pair {
+  .section-image-pair,
+  .framework-section {
     grid-template-columns: 1fr;
   }
   .layered-image-stack {
@@ -1616,13 +1627,9 @@ body {
     display: inline-block;
     margin-top: 1rem;
   }
-  .workshop-tabs,
-  .framework-image {
+  .workshop-tabs {
     width: 100%;
     margin-right: 0;
-  }
-  .framework-image {
-    grid-template-columns: 1fr;
   }
   .workshop-slide-media {
     height: 360px;
@@ -1630,13 +1637,9 @@ body {
   .workshop-slide {
     grid-template-rows: 360px minmax(180px, auto);
   }
-  .framework-copy {
-    border-left: 0;
-    border-top: 1px solid var(--border);
-  }
 }
 
-/* ── HOME PAGE — SECTIONS ── */
+/* ── HOME PAGE - SECTIONS ── */
 .home-section {
   padding: 6rem 4rem;
   max-width: 1300px;
@@ -1667,7 +1670,7 @@ body {
   margin-bottom: 3rem;
 }
 
-/* ── HOME PAGE — SERVICES ── */
+/* ── HOME PAGE - SERVICES ── */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1700,7 +1703,7 @@ body {
 }
 .service-desc { font-size: 0.9rem; color: var(--mid); line-height: 1.75; }
 
-/* ── HOME PAGE — WORK ── */
+/* ── HOME PAGE - WORK ── */
 .work-section { background: var(--bg-dark); padding: 6rem 0; }
 .work-inner { max-width: 1300px; margin: 0 auto; padding: 0 4rem; }
 .work-grid {
@@ -1781,7 +1784,7 @@ body {
 .work-card-desc { font-size: 0.87rem; color: var(--mid); line-height: 1.65; flex: 1; margin-bottom: 1.2rem; }
 .work-card-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
 
-/* ── HOME PAGE — ABOUT ── */
+/* ── HOME PAGE - ABOUT ── */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -1791,7 +1794,7 @@ body {
 .about-text p { font-size: 1rem; color: var(--mid); line-height: 1.85; margin-bottom: 1.2rem; }
 .about-text p strong { color: var(--navy); font-weight: 600; }
 
-/* ── HOME PAGE — CV PANEL ── */
+/* ── HOME PAGE - CV PANEL ── */
 .cv-section { background: var(--surface); border-radius: 16px; border: 1px solid var(--bg-dark); overflow: hidden; }
 .cv-header {
   background: var(--navy);
@@ -1844,7 +1847,7 @@ body {
   margin-top: 0.4rem;
 }
 
-/* ── HOME PAGE — CONTACT ── */
+/* ── HOME PAGE - CONTACT ── */
 .contact-section { background: var(--navy); padding: 6rem 4rem; text-align: center; }
 .contact-section .home-section-label { color: var(--sage); }
 .contact-section .home-section-title { color: var(--surface); margin-bottom: 0.75rem; }
