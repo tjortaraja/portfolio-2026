@@ -471,6 +471,25 @@ body {
 .role-callout-wide {
   margin-bottom: 2.2rem;
 }
+.role-section-intro {
+  margin-bottom: 2.8rem;
+  max-width: 1080px;
+  padding-top: 1.5rem;
+}
+.role-section-intro h3 {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+}
+.role-section-intro p {
+  color: var(--mid);
+  font-size: 1rem;
+  line-height: 1.85;
+}
 .role-copy-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
