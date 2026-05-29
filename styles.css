@@ -1006,6 +1006,38 @@ body {
 
 /* ── CASE STUDY FOOTER ── */
 .cs-footer { background: var(--navy); padding: 3.5rem 4rem; }
+.case-top-link-wrap {
+  display: flex;
+  justify-content: flex-end;
+  background: var(--surface);
+  padding: 1rem 4rem;
+  border-top: 1px solid var(--border);
+}
+.case-top-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  text-decoration: none;
+  min-height: 32px;
+  padding: 0.25rem 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.case-top-link:hover {
+  transform: translateY(-2px);
+  color: var(--sage-mid);
+}
+.case-top-link svg {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+}
 .cs-footer-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -1935,6 +1967,11 @@ body {
   .card-grid-2, .hyp-grid, .reflect-grid { grid-template-columns: 1fr; }
   .cs-meta { gap: 1.5rem; }
   .cs-footer { padding: 3rem 1.5rem; }
+  .case-top-link-wrap { padding: 1rem 1.5rem; }
+  .case-top-link {
+    min-height: 40px;
+    padding: 0.4rem 0;
+  }
   .cs-footer-inner { flex-direction: column; }
   .big-quote-wrap { padding: 4rem 1.5rem; }
 }
