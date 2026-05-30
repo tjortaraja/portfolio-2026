@@ -423,6 +423,108 @@ body {
   object-fit: contain;
 }
 
+.section-intro {
+  max-width: 78ch;
+}
+
+.evidence-shots {
+  margin-top: 2rem;
+}
+
+.image-marker-card {
+  min-height: 260px;
+  display: grid;
+  align-content: center;
+  gap: 0.45rem;
+  padding: 1.6rem;
+  border: 1px dashed rgba(123, 158, 135, 0.5);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(123,158,135,0.08) 0%, rgba(250,250,248,0.88) 100%);
+}
+
+.image-marker-label {
+  margin: 0;
+  color: var(--sage-mid);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.image-marker-title {
+  margin: 0;
+  color: var(--navy);
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.image-marker-note {
+  margin: 0;
+  color: var(--mid);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.foundation-stack {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.foundation-block {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: 2rem;
+  align-items: start;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.foundation-block:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.foundation-block.text-only {
+  grid-template-columns: minmax(0, 78ch);
+}
+
+.foundation-block h3,
+.profile-flow-section > h3 {
+  margin: 0 0 0.85rem;
+  color: var(--navy);
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.18;
+}
+
+.foundation-block .case-image-card,
+.foundation-block .image-marker-card {
+  margin: 0;
+}
+
+.foundation-block .zoom-image-trigger {
+  height: clamp(260px, 28vw, 380px);
+  overflow: hidden;
+  background: #eef3f3;
+}
+
+.foundation-block .case-image-card img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.foundation-context {
+  margin-top: 2rem;
+}
+
 .system-arch {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1342,6 +1444,14 @@ a.case-top-link svg {
 .bih-flow-sequence {
   margin-top: 1.8rem;
 }
+.profile-flow-section {
+  margin-top: 3rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid var(--border);
+}
+.profile-flow-section > .body-text {
+  max-width: 72ch;
+}
 .bih-flow-track {
   display: grid;
   grid-auto-flow: column;
@@ -1398,6 +1508,9 @@ a.case-top-link svg {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
+}
+.bih-flow-branches > .body-text {
+  max-width: 78ch;
 }
 .flow-branch-label {
   margin-bottom: 1rem;
@@ -2177,7 +2290,7 @@ a.case-top-link svg {
   .cs-hero { padding: 7rem 1.5rem 4rem; }
   .hero-img-strip { padding: 0 1.5rem 3rem; }
   .cs-section { padding: 3.5rem 1.5rem; }
-  .two-col, .two-col.even, .context-copy-grid, .section-copy-callouts { grid-template-columns: 1fr; gap: 2rem; }
+  .two-col, .two-col.even, .context-copy-grid, .section-copy-callouts, .foundation-block { grid-template-columns: 1fr; gap: 2rem; }
   .system-arch,
   .context-pair,
   .research-context,

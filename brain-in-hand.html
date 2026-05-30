@@ -128,13 +128,21 @@
             <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Automated notifications or status alerts</div></div>
             <div class="stat-card"><div class="stat-number">25k</div><div class="stat-label">Users managed across this process</div></div>
           </div>
-          <!-- Findings images placeholder -->
-          <div class="img-ph" style="margin-top:1.2rem;">
-            <div class="img-ph-icon">🖼</div>
-            <p class="img-ph-title">Research findings images</p>
-            <p class="img-ph-note">Photos from shadowing sessions, whiteboard synthesis, affinity mapping, or annotated screenshots of the CST's workarounds.</p>
-          </div>
         </div>
+      </div>
+
+      <div class="case-shot-grid two-up evidence-shots">
+        <figure class="case-image-card">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom CST workflow map">
+            <img src="images/BiH/Processing%20a%20Refferal.png" alt="CST workflow map showing eight steps from purchase order to user activation" data-zoomable>
+          </button>
+          <figcaption>CST workflow map — eight steps from Purchase Order to user activation</figcaption>
+        </figure>
+        <figure class="image-marker-card">
+          <p class="image-marker-label">Image needed</p>
+          <p class="image-marker-title">Scamping photo</p>
+          <p class="image-marker-note">Early design thinking</p>
+        </figure>
       </div>
     </div>
   </section>
@@ -145,32 +153,62 @@
       <p class="section-eyebrow">Before Any Screen Was Drawn</p>
       <h2 class="section-heading">The work that doesn't look like design — but makes design possible.</h2>
       <div class="divider"></div>
-      <div class="section-copy-callouts">
-        <div>
-          <p class="body-text">In B2B SaaS, the temptation is to move straight to screens. The real work here came first — and it wasn't glamorous. Before a single wireframe was sketched, the data had to be understood, mapped, and made coherent enough for a single interface to reliably surface it.</p>
-          <p class="body-text">Working with the Business Analyst, I mapped data relationships across all three platforms — Funder, Programme, User, and Licence chains spanning DSA, Access to Work, Group, and Private funding types. The goal was a unified data model: a blueprint for what a single source of truth would actually contain, and the technical foundation for a GDPR-compliant UK data migration. This wasn't a preliminary step. It was the design work that made everything else possible.</p>
-          <p class="body-text">Workflow analysis mapped the existing CST journey end to end — eight manual steps from Purchase Order to user activation, each requiring status checks across separate systems with no automated handoffs between them. That map made visible what the team had stopped noticing: they were spending more time managing tools than supporting users.</p>
-          <p class="body-text">[PLACEHOLDER: The existing information architecture reflected the fragmentation of the three systems — [describe key structural problems with old IA here]. The proposed IA consolidated this into [describe key structural changes — what was unified, what was removed, what the sub-navigation replaced]. That structural shift was the foundation everything else was built on.]</p>
-          <p class="body-text">Stakeholder interviews with the CRM and Dev teams surfaced technical constraints that shaped the phasing decisions — including the choice to defer HubSpot integration and focus on a stable foundation first. A component library audit against the Vuetify upgrade identified what could be reused and where new patterns were needed. Content mapping grouped every data point into four logical clusters — registration, referral, package, and support — which became the information architecture the profile was built on.</p>
-        </div>
-        <div class="callout-stack">
-          <div class="context-box navy">
-            <p class="context-label">Product Context</p>
-            <p class="context-text">The unified profile is only as reliable as the data beneath it. Getting the architecture right first wasn't a delay — it was the work.</p>
+      <p class="body-text section-intro">In B2B SaaS, the temptation is to move straight to screens. The real work here came first. Before a single wireframe was sketched, the data had to be understood, mapped, and made coherent enough for a single interface to reliably surface it.</p>
+
+      <div class="foundation-stack">
+        <article class="foundation-block">
+          <div>
+            <h3>Data model</h3>
+            <p class="body-text">Working with the Business Analyst, I mapped data relationships across all three platforms — Funder, Programme, User, and Licence chains spanning DSA, Access to Work, Group, and Private funding types. The goal was a unified data model: a blueprint for what a single source of truth would actually contain, and the technical foundation for a GDPR-compliant UK data migration. This wasn't a preliminary step. It was the design work that made everything else possible.</p>
           </div>
-          <div class="context-box">
-            <p class="context-label">Design Principle</p>
-            <p class="context-text">Cross-functional collaboration at this level of technical depth is what makes an interface genuinely trustworthy. The IA is only as good as the model it's built on.</p>
+          <figure class="image-marker-card">
+            <p class="image-marker-label">Image needed</p>
+            <p class="image-marker-title">Proposed data model diagram</p>
+          </figure>
+        </article>
+
+        <article class="foundation-block">
+          <div>
+            <h3>Workflow map</h3>
+            <p class="body-text">Eight manual steps from Purchase Order to user activation, each requiring status checks across separate systems with no automated handoffs between them. Mapping the existing CST journey end to end made visible what the team had stopped noticing: they were spending more time managing tools than supporting users.</p>
           </div>
-        </div>
+          <figure class="case-image-card">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom CST workflow map">
+              <img src="images/BiH/Processing%20a%20Refferal.png" alt="CST workflow map showing eight steps from purchase order to user activation" data-zoomable>
+            </button>
+            <figcaption>CST workflow map</figcaption>
+          </figure>
+        </article>
+
+        <article class="foundation-block">
+          <div>
+            <h3>Information architecture</h3>
+            <p class="body-text">The existing IA reflected the fragmentation of three separate systems — deeply nested, inconsistently structured, and built around tools rather than tasks. The proposed IA consolidated this into a single profile with four clear sections, a sub-navigation that replaced multiple separate pages, and a hierarchy built around how CST members actually moved through a case.</p>
+          </div>
+          <figure class="image-marker-card">
+            <p class="image-marker-label">Image needed</p>
+            <p class="image-marker-title">Current IA / Proposed IA comparison</p>
+          </figure>
+        </article>
+
+        <article class="foundation-block text-only">
+          <div>
+            <h3>Technical scope</h3>
+            <p class="body-text">Stakeholder interviews with the CRM and Dev teams surfaced constraints that shaped the phasing decisions — including the choice to defer HubSpot integration and focus on a stable foundation first. A component library audit against the Vuetify upgrade identified what could be reused and where new patterns were needed. Content mapping grouped every data point into four logical clusters — registration, referral, package, and support — which became the information architecture the profile was built on.</p>
+          </div>
+        </article>
       </div>
 
-      <figure class="case-image-card section-wide-image">
-        <button class="zoom-image-trigger" type="button" aria-label="Zoom processing a referral workflow image">
-          <img src="images/BiH/Processing%20a%20Refferal.png" alt="Workflow map showing the steps involved in processing a referral" data-zoomable>
-        </button>
-        <figcaption>Processing a Refferal</figcaption>
-      </figure>
+      <div class="context-pair foundation-context">
+        <div class="context-box navy">
+          <p class="context-label">Product Context</p>
+          <p class="context-text">The unified profile is only as reliable as the data beneath it. Getting the architecture right first wasn't a delay — it was the work.</p>
+        </div>
+        <div class="context-box">
+          <p class="context-label">Design Principle</p>
+          <p class="context-text">Cross-functional collaboration at this level of technical depth is what makes an interface genuinely trustworthy. The IA is only as good as the model it's built on.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -213,6 +251,83 @@
         </figure>
       </div>
 
+      <div class="profile-flow-section">
+        <h3>The new profile flow</h3>
+        <p class="body-text">The profile was structured around how CST members actually moved through a case — from quick status checks to package management and edits.</p>
+
+        <div class="bih-flow-sequence" aria-label="New unified profile flow">
+          <div class="bih-flow-track">
+            <figure class="case-image-card bih-flow-step">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom UPPreview screen">
+                <img src="images/BiH/UPPreview.png" alt="Brain in Hand user profile preview screen" data-zoomable>
+              </button>
+              <figcaption><span>01</span>UPPreview</figcaption>
+            </figure>
+            <figure class="case-image-card bih-flow-step">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom Overview screen">
+                <img src="images/BiH/Overview.png" alt="Brain in Hand Overview screen" data-zoomable>
+              </button>
+              <figcaption><span>02</span>Overview</figcaption>
+            </figure>
+            <figure class="case-image-card bih-flow-step">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom User Details screen">
+                <img src="images/BiH/UserDetails.png" alt="Brain in Hand User Details screen" data-zoomable>
+              </button>
+              <figcaption><span>03</span>User Details</figcaption>
+            </figure>
+            <figure class="case-image-card bih-flow-step">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom Quick View expanded screen">
+                <img src="images/BiH/Quickview.png" alt="Brain in Hand Quick View expanded screen" data-zoomable>
+              </button>
+              <figcaption><span>04</span>Quick View expanded</figcaption>
+            </figure>
+            <figure class="case-image-card bih-flow-step">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages screen">
+                <img src="images/BiH/Package.png" alt="Brain in Hand Packages screen" data-zoomable>
+              </button>
+              <figcaption><span>05</span>Packages</figcaption>
+            </figure>
+            <figure class="case-image-card bih-flow-step">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages Expanded screen">
+                <img src="images/BiH/Package%20Expanded.png" alt="Brain in Hand Packages Expanded screen" data-zoomable>
+              </button>
+              <figcaption><span>06</span>Packages Expanded</figcaption>
+            </figure>
+          </div>
+
+          <div class="bih-flow-branches" aria-label="Packages expanded edit paths">
+            <p class="body-text">From the expanded package view, CST members could either edit in the legacy page or complete focused edits in a modal — keeping them in context and reducing the risk of losing work mid-session.</p>
+            <div class="bih-branch-grid">
+              <figure class="case-image-card">
+                <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in old page screen">
+                  <img src="images/BiH/Edit%20in%20old%20page.png" alt="Brain in Hand Edit in old page screen" data-zoomable>
+                </button>
+                <figcaption>Edit in old page</figcaption>
+              </figure>
+              <figure class="case-image-card">
+                <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in modal screen">
+                  <img src="images/BiH/Edit%20in%20modal.png" alt="Brain in Hand Edit in modal screen" data-zoomable>
+                </button>
+                <figcaption>Edit in modal</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="bih-short-term-section">
+          <div>
+            <h3>Package short-term solution</h3>
+            <p class="body-text">Where multiple packages couldn't be supported in this phase, a stripped-back view surfaced the single active package clearly — a deliberate fallback, not an oversight.</p>
+          </div>
+          <figure class="case-image-card">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom Package Short-Term Solution screen">
+              <img src="images/BiH/Package%20Short-Term%20Solution.png" alt="Brain in Hand Package Short-Term Solution screen" data-zoomable>
+            </button>
+            <figcaption>Package Short-Term Solution</figcaption>
+          </figure>
+        </div>
+      </div>
+
       <h3 style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.05rem;color:var(--navy);margin:2.5rem 0 1rem;">Four decisions worth naming.</h3>
       <div class="decision-list">
         <div class="decision-item"><p class="decision-label">Accessibility</p><p class="decision-text">Brain in Hand's users are neurodivergent. That made accessibility a design input, not a compliance checkbox. Colour contrast was validated against WCAG standards throughout — not at the end of the process, but at every decision point along the way. A proposed colour token system mapped existing brand colours to a structured palette, giving the dev team a consistent reference for every component state.</p></div>
@@ -248,78 +363,6 @@
       <p class="body-text">Manual status tracking is gone. CST members no longer maintain personal spreadsheets or calculate 90-day countdowns by hand. The three-system lookup that had defined the team's daily workflow no longer exists. One profile surfaces everything — registration status, licence details, support history, case ownership — in a single view.</p>
       <p class="body-text">The GDPR-compliant data migration resolved the compliance requirement that had made the existing architecture unsustainable. The unified data model supports white-labelled instances for individual university and local authority clients, and fully supports the case management dashboard the CST identified as their most urgent unmet need.</p>
       <p class="body-text">This was a contract engagement. The brief was to define and validate the unified profile — and that's what was delivered. The internal team received a production-ready handoff: a tested design, a clean data model, a component specification, and documented decisions about what was built, what was deferred, and why. The foundation was built to be built on.</p>
-
-      <div class="bih-flow-sequence" aria-label="New unified profile flow">
-        <div class="bih-flow-track">
-          <figure class="case-image-card bih-flow-step">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom UPPreview screen">
-              <img src="images/BiH/UPPreview.png" alt="Brain in Hand user profile preview screen" data-zoomable>
-            </button>
-            <figcaption><span>01</span>UPPreview</figcaption>
-          </figure>
-          <figure class="case-image-card bih-flow-step">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom Overview screen">
-              <img src="images/BiH/Overview.png" alt="Brain in Hand Overview screen" data-zoomable>
-            </button>
-            <figcaption><span>02</span>Overview</figcaption>
-          </figure>
-          <figure class="case-image-card bih-flow-step">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom User Details screen">
-              <img src="images/BiH/UserDetails.png" alt="Brain in Hand User Details screen" data-zoomable>
-            </button>
-            <figcaption><span>03</span>User Details</figcaption>
-          </figure>
-          <figure class="case-image-card bih-flow-step">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom User Details Expanded screen">
-              <img src="images/BiH/Quickview.png" alt="Brain in Hand expanded user details quick view screen" data-zoomable>
-            </button>
-            <figcaption><span>04</span>User Details Expanded</figcaption>
-          </figure>
-          <figure class="case-image-card bih-flow-step">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages screen">
-              <img src="images/BiH/Package.png" alt="Brain in Hand Packages screen" data-zoomable>
-            </button>
-            <figcaption><span>05</span>Packages</figcaption>
-          </figure>
-          <figure class="case-image-card bih-flow-step">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages Expanded screen">
-              <img src="images/BiH/Package%20Expanded.png" alt="Brain in Hand Packages Expanded screen" data-zoomable>
-            </button>
-            <figcaption><span>06</span>Packages Expanded</figcaption>
-          </figure>
-        </div>
-
-        <div class="bih-flow-branches" aria-label="Packages expanded edit paths">
-          <p class="flow-branch-label">Offshoots from Packages Expanded</p>
-          <div class="bih-branch-grid">
-            <figure class="case-image-card">
-              <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in old page screen">
-                <img src="images/BiH/Edit%20in%20old%20page.png" alt="Brain in Hand Edit in old page screen" data-zoomable>
-              </button>
-              <figcaption>Edit in old page</figcaption>
-            </figure>
-            <figure class="case-image-card">
-              <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in modal screen">
-                <img src="images/BiH/Edit%20in%20modal.png" alt="Brain in Hand Edit in modal screen" data-zoomable>
-              </button>
-              <figcaption>Edit in modal</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-
-      <div class="bih-short-term-section">
-        <div>
-          <h3>Package Short-Term Solution</h3>
-          <p class="body-text">This view separated short-term package details from the core profile flow, making temporary support arrangements visible without overloading the main package journey.</p>
-        </div>
-        <figure class="case-image-card">
-          <button class="zoom-image-trigger" type="button" aria-label="Zoom Package Short-Term Solution screen">
-            <img src="images/BiH/Package%20Short-Term%20Solution.png" alt="Brain in Hand Package Short-Term Solution screen" data-zoomable>
-          </button>
-          <figcaption>Package Short-Term Solution</figcaption>
-        </figure>
-      </div>
     </div>
   </section>
 
