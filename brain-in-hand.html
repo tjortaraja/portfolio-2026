@@ -236,11 +236,76 @@
         <li><div class="out-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></div><div class="out-text"><strong>Foundation for the dashboard</strong>The data model fully supports the case management dashboard the CST identified as their highest-priority unmet need.</div></li>
       </ul>
 
-      <!-- Full flow image placeholder -->
-      <div class="img-ph wide" style="margin-top:1.5rem;">
-        <div class="img-ph-icon">🖼</div>
-        <p class="img-ph-title">The new unified flow - end to end</p>
-        <p class="img-ph-note">The complete screen flow: from search to status check to profile update - all in one view. Show the before/after contrast if possible.</p>
+      <div class="bih-flow-sequence" aria-label="New unified profile flow">
+        <div class="bih-flow-track">
+          <figure class="case-image-card bih-flow-step">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom UPPreview screen">
+              <img src="images/BiH/UPPreview.png" alt="Brain in Hand user profile preview screen" data-zoomable>
+            </button>
+            <figcaption><span>01</span>UPPreview</figcaption>
+          </figure>
+          <figure class="case-image-card bih-flow-step">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom Overview screen">
+              <img src="images/BiH/Overview.png" alt="Brain in Hand Overview screen" data-zoomable>
+            </button>
+            <figcaption><span>02</span>Overview</figcaption>
+          </figure>
+          <figure class="case-image-card bih-flow-step">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom User Details screen">
+              <img src="images/BiH/UserDetails.png" alt="Brain in Hand User Details screen" data-zoomable>
+            </button>
+            <figcaption><span>03</span>User Details</figcaption>
+          </figure>
+          <figure class="case-image-card bih-flow-step">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom User Details Expanded screen">
+              <img src="images/BiH/Quickview.png" alt="Brain in Hand expanded user details quick view screen" data-zoomable>
+            </button>
+            <figcaption><span>04</span>User Details Expanded</figcaption>
+          </figure>
+          <figure class="case-image-card bih-flow-step">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages screen">
+              <img src="images/BiH/Package.png" alt="Brain in Hand Packages screen" data-zoomable>
+            </button>
+            <figcaption><span>05</span>Packages</figcaption>
+          </figure>
+          <figure class="case-image-card bih-flow-step">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages Expanded screen">
+              <img src="images/BiH/Package%20Expanded.png" alt="Brain in Hand Packages Expanded screen" data-zoomable>
+            </button>
+            <figcaption><span>06</span>Packages Expanded</figcaption>
+          </figure>
+        </div>
+
+        <div class="bih-flow-branches" aria-label="Packages expanded edit paths">
+          <p class="flow-branch-label">Offshoots from Packages Expanded</p>
+          <div class="bih-branch-grid">
+            <figure class="case-image-card">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in old page screen">
+                <img src="images/BiH/Edit%20in%20old%20page.png" alt="Brain in Hand Edit in old page screen" data-zoomable>
+              </button>
+              <figcaption>Edit in old page</figcaption>
+            </figure>
+            <figure class="case-image-card">
+              <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in modal screen">
+                <img src="images/BiH/Edit%20in%20modal.png" alt="Brain in Hand Edit in modal screen" data-zoomable>
+              </button>
+              <figcaption>Edit in modal</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="bih-short-term-section">
+        <div>
+          <h3>Package Short-Term Solution</h3>
+          <p class="body-text">This view separated short-term package details from the core profile flow, making temporary support arrangements visible without overloading the main package journey.</p>
+        </div>
+        <figure class="case-image-card">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom Package Short-Term Solution screen">
+            <img src="images/BiH/Package%20Short-Term%20Solution.png" alt="Brain in Hand Package Short-Term Solution screen" data-zoomable>
+          </button>
+          <figcaption>Package Short-Term Solution</figcaption>
+        </figure>
       </div>
     </div>
   </section>
