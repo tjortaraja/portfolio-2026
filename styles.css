@@ -285,28 +285,28 @@ body {
   position: relative;
   z-index: 1;
 }
-.cc-case-hero::after {
+.case-hero-with-image::after {
   content: '';
   position: absolute;
   top: 12.5rem;
-  right: -5rem;
+  right: var(--case-hero-right, -5rem);
   bottom: auto;
   width: min(66vw, 940px);
   height: min(24vw, 250px);
   background:
     linear-gradient(to right, var(--navy) 0%, rgba(15,27,45,0.96) 32%, rgba(15,27,45,0.5) 58%, rgba(15,27,45,0.04) 100%),
-    url("images/C&C/The Hero - Filters.png") right center / cover no-repeat;
+    var(--case-hero-image) right center / cover no-repeat;
   opacity: 0.68;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 28%, #000 100%);
   mask-image: linear-gradient(to right, transparent 0%, #000 28%, #000 100%);
   pointer-events: none;
 }
-.cc-case-hero .cs-hero-inner {
+.case-hero-with-image .cs-hero-inner {
   max-width: 1200px;
 }
-.cc-case-hero .cs-title,
-.cc-case-hero .cs-subtitle,
-.cc-case-hero .cs-meta {
+.case-hero-with-image .cs-title,
+.case-hero-with-image .cs-subtitle,
+.case-hero-with-image .cs-meta {
   max-width: 840px;
 }
 .eyebrow-sm {
@@ -1641,7 +1641,7 @@ a.case-top-link svg {
 }
 @media (max-width: 900px) {
   .cs-hero-image { padding: 5rem 1.5rem 0; }
-  .cc-case-hero::after {
+  .case-hero-with-image::after {
     display: none;
   }
   .case-shot-grid,
