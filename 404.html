@@ -3,79 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 | TJ Anderson</title>
+  <meta name="description" content="Page not found on TJ Anderson's portfolio.">
+  <title>Page not found | TJ Anderson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20260529">
   <style>
-    .error-page {
+    body {
       min-height: 100vh;
-      background: #0f1b2d;
-      color: #f5f7f2;
-      display: flex;
+      background: var(--navy);
+      color: var(--surface);
+    }
+
+    .error-page {
+      position: relative;
+      min-height: 100vh;
+      display: grid;
       align-items: center;
-      padding: 4rem 1.5rem;
+      padding: clamp(6rem, 12vw, 9rem) clamp(1.5rem, 5vw, 4rem) clamp(3rem, 7vw, 5rem);
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .error-page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(135deg, rgba(15, 27, 45, 0.96), rgba(15, 27, 45, 0.9)),
+        url("images/coastarian/kenyan-coast-hero.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .error-page::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 78% 18%, rgba(123, 158, 135, 0.28), transparent 32%),
+        linear-gradient(180deg, rgba(15, 27, 45, 0.02), rgba(15, 27, 45, 0.5));
     }
 
     .error-inner {
-      max-width: 1100px;
+      width: min(100%, 1040px);
       margin: 0 auto;
     }
 
+    .error-heading {
+      display: block;
+    }
+
+    .error-kicker {
+      width: max-content;
+      margin: 0 0 -0.08em;
+      transform: translateX(clamp(3.6rem, 12vw, 10rem));
+      color: rgba(250, 250, 248, 0.7);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
     .error-code {
-      font-size: clamp(12rem, 38vw, 32rem);
-      line-height: 0.78;
-      font-weight: 900;
+      display: block;
+      max-width: 9ch;
+      margin: 0 0 clamp(1.5rem, 3vw, 2.2rem);
+      padding: 0.08em 0 0.04em;
+      font-family: "Epilogue", sans-serif;
+      font-size: clamp(12rem, 42vw, 34rem);
+      font-weight: 800;
+      line-height: 0.86;
       letter-spacing: 0;
-      margin: 0 0 2rem;
+      color: transparent;
       background-image: url("images/coastarian/kenyan-coast-hero.png");
       background-size: cover;
-      background-position: center;
-      color: transparent;
+      background-position: center 68%;
       -webkit-background-clip: text;
       background-clip: text;
+      filter: saturate(1.08) contrast(1.08);
+      text-shadow: none;
+      -webkit-text-stroke: clamp(1px, 0.12vw, 2px) rgba(250, 250, 248, 0.22);
     }
 
     .error-copy {
       max-width: 720px;
-      font-size: clamp(1.4rem, 3vw, 2.5rem);
-      line-height: 1.25;
       margin: 0 0 2rem;
+      color: rgba(250, 250, 248, 0.82);
+      font-size: clamp(1.2rem, 2.4vw, 2rem);
+      line-height: 1.28;
+      text-wrap: balance;
+    }
+
+    .error-copy span {
+      display: block;
     }
 
     .error-actions {
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 0.9rem;
+      max-width: 720px;
     }
 
-    .error-actions {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
+    .error-actions .btn-ghost {
+      border-color: rgba(250, 250, 248, 0.42);
+      color: rgba(250, 250, 248, 0.84);
+    }
 
-.error-actions a {
-  color: #f5f7f2;
-  font-weight: 800;
-  text-decoration: underline;
-  text-underline-offset: 0.35rem;
-}
+    .error-actions .btn-ghost:hover {
+      border-color: var(--sage);
+      color: var(--sage);
+    }
 
-.error-actions a:hover {
-  color: #93aa96;
-}
+    @media (max-width: 720px) {
+      .error-page {
+        align-items: end;
+        min-height: 100svh;
+      }
 
+      .error-page::before {
+        background-position: 58% center;
+      }
+
+      .error-page::after {
+        background:
+          radial-gradient(circle at 76% 16%, rgba(123, 158, 135, 0.22), transparent 34%),
+          linear-gradient(180deg, rgba(15, 27, 45, 0.12), rgba(15, 27, 45, 0.74));
+      }
+
+      .error-code {
+        font-size: clamp(10rem, 54vw, 15rem);
+        background-position: 58% 68%;
+      }
+
+      .error-heading {
+        display: block;
+      }
+
+      .error-kicker {
+        margin: 0 0 0.8rem;
+        transform: translateX(clamp(2.2rem, 18vw, 4.8rem));
+      }
+
+      .error-actions {
+        width: 100%;
+        max-width: none;
+      }
+
+      .error-actions a {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
   <main class="error-page">
-    <section class="error-inner">
-      <h1 class="error-code">404</h1>
-      <p class="error-copy">Looks like you are in the wrong place. Yes we would all rather be on holiday, but back to work, my work!</p>
-      <div class="error-actions">
-  <a href="index.html">Home</a>
-  <a href="index.html#work">Case studies</a>
-</div>
+    <section class="error-inner" aria-labelledby="error-title">
+      <div class="error-heading">
+        <p class="error-kicker">Page not found</p>
+        <h1 class="error-code" id="error-title">404</h1>
+      </div>
+      <p class="error-copy">
+        <span>Looks like this route wandered off.</span>
+        <span>Tempting to call it a holiday,</span>
+        <span>But let's get you back to the work.</span>
+      </p>
+      <div class="error-actions" aria-label="Page not found actions">
+        <a href="index.html" class="btn-primary">Home</a>
+        <a href="index.html#work" class="btn-ghost">Case studies</a>
+      </div>
     </section>
   </main>
 </body>
