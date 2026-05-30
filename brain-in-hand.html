@@ -25,7 +25,7 @@
   </nav>
 
   <!-- HERO -->
-  <header class="cs-hero case-hero-with-image" style="--case-hero-image: url('images/BiH/BiH%20Hero%20a.png'); --case-hero-right: -12rem;">
+  <header class="cs-hero case-hero-with-image" style="--case-hero-image: url('images/BiH/BiH%20Hero%20b.png'); --case-hero-right: -5rem; --case-hero-top: 11rem; --case-hero-image-position: right top;">
     <div class="cs-hero-inner fade-in">
       <p class="eyebrow-sm">Case Study · Brain in Hand · 2023</p>
       <h1 class="cs-title">From manual chaos to a single source of truth</h1>
@@ -45,23 +45,16 @@
       <p class="section-eyebrow">The Context</p>
       <h2 class="section-heading">The tools had multiplied.<br>The truth had not.</h2>
       <div class="divider"></div>
-      <div class="two-col">
+      <div class="context-copy-grid">
         <div>
           <p class="body-text">Brain in Hand is a regulated, cloud-based platform used by universities and local authorities to support neurodivergent individuals through daily life. When someone is referred to the service, a 90-day registration window opens - and the Customer Service Team must coordinate that user's journey across multiple systems with no automated status tracking.</p>
+        </div>
+        <div>
           <p class="body-text">Data had grown organically across three separate platforms. None of them talked to each other. Changing privacy laws required migrating user data from US-hosted servers to UK infrastructure - a compliance imperative that made the existing architecture unsustainable.</p>
           <p class="body-text">The core problem wasn't a lack of data. It was that the data was <strong>invisible and disconnected</strong> - and the people who needed it most were paying the price.</p>
         </div>
-        <div>
-          <!-- Three systems image placeholder -->
-          <div class="img-ph tall">
-            <div class="img-ph-icon">🖼</div>
-            <p class="img-ph-title">Before - three separate systems</p>
-            <p class="img-ph-note">Screenshot or diagram of the three system views (Insightly, FreshDesk, Brain in Hand platform) the CST navigated for every single user lookup.</p>
-          </div>
-        </div>
       </div>
 
-      <!-- System architecture -->
       <div class="system-arch">
         <div class="arch-box">
           <p class="arch-label">CRM</p>
@@ -79,6 +72,12 @@
           <p class="arch-desc">Registration status, package type, licence data</p>
         </div>
       </div>
+
+      <figure class="case-image-card context-wide-image">
+        <img src="images/BiH/No%20Single%20Source%20of%20Truth.png" alt="Diagram showing Brain in Hand data split across separate systems with no single source of truth">
+        <figcaption>Before the redesign: No Single source of truth</figcaption>
+      </figure>
+
     </div>
   </section>
 
@@ -134,31 +133,30 @@
       <p class="section-eyebrow">Before Any Screen Was Drawn</p>
       <h2 class="section-heading">The design work that nobody sees - but everything depends on.</h2>
       <div class="divider"></div>
-      <div class="two-col even">
+      <div class="section-copy-callouts">
         <div>
           <p class="body-text">In B2B SaaS, the temptation is to jump to interface design. The real work here came first: understanding the data, mapping the system architecture, and creating a shared foundation that any interface would be built on.</p>
           <p class="body-text">I worked with our Business Analyst to cross-reference data from all three platforms, building a unified data model - the blueprint for what a single source of truth would actually contain, and the requirement for GDPR-compliant UK data migration.</p>
           <p class="body-text">Content mapping grouped every data point a CST member might need into four logical clusters - registration, referral, package, and support - which directly informed the new information architecture.</p>
-          <div class="context-pair" style="margin-top:1rem;">
-            <div class="context-box navy">
-              <p class="context-label">Product Context</p>
-              <p class="context-text">The data model had to be clean before the interface could be trustworthy. Weeks mapping data with the BA weren't a precursor to the design - they were design.</p>
-            </div>
-            <div class="context-box">
-              <p class="context-label">Design Principle</p>
-              <p class="context-text">Cross-functional collaboration at this level of technical depth is what makes an interface genuinely reliable. The IA is only as good as the data beneath it.</p>
-            </div>
-          </div>
         </div>
-        <div>
-          <!-- Journey / flow work placeholder -->
-          <div class="img-ph tall">
-            <div class="img-ph-icon">🖼</div>
-            <p class="img-ph-title">Journey and flow work</p>
-            <p class="img-ph-note">Workflow mapping, journey diagrams, data model sketches, or the IA work that structured the four data clusters - before any screens were drawn.</p>
+        <div class="callout-stack">
+          <div class="context-box navy">
+            <p class="context-label">Product Context</p>
+            <p class="context-text">The data model had to be clean before the interface could be trustworthy. Weeks mapping data with the BA weren't a precursor to the design - they were design.</p>
+          </div>
+          <div class="context-box">
+            <p class="context-label">Design Principle</p>
+            <p class="context-text">Cross-functional collaboration at this level of technical depth is what makes an interface genuinely reliable. The IA is only as good as the data beneath it.</p>
           </div>
         </div>
       </div>
+
+      <figure class="case-image-card section-wide-image">
+        <button class="zoom-image-trigger" type="button" aria-label="Zoom processing a referral workflow image">
+          <img src="images/BiH/Processing%20a%20Refferal.png" alt="Workflow map showing the steps involved in processing a referral" data-zoomable>
+        </button>
+        <figcaption>Processing a Refferal</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -186,11 +184,19 @@
         </div>
       </div>
 
-      <!-- Quick View and Profile placeholder -->
-      <div class="img-ph wide" style="margin-top:1.5rem;">
-        <div class="img-ph-icon">🖼</div>
-        <p class="img-ph-title">Quick View overlay and top of Full Profile</p>
-        <p class="img-ph-note">The Quick View overlay showing the 90-day countdown and key actions, alongside the top of the unified Full Profile screen - the single source of truth for the CST.</p>
+      <div class="case-shot-grid two-up bih-design-shots">
+        <figure class="case-image-card">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom Quick View interface">
+            <img src="images/BiH/Quick%20View.png" alt="Brain in Hand Quick View interface showing registration status and case details" data-zoomable>
+          </button>
+          <figcaption>Quick View</figcaption>
+        </figure>
+        <figure class="case-image-card">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom Full Profile interface with menu expanded">
+            <img src="images/BiH/Profile%20with%20menu%20expanded.png" alt="Brain in Hand full profile interface with navigation menu expanded" data-zoomable>
+          </button>
+          <figcaption>Profile with menu expanded</figcaption>
+        </figure>
       </div>
 
       <h3 style="font-family:'Epilogue',sans-serif;font-weight:700;font-size:1.05rem;color:var(--navy);margin:2.5rem 0 1rem;">Three decisions worth naming.</h3>
@@ -277,9 +283,50 @@
     </div>
   </footer>
 
+  <div class="image-zoom" data-image-zoom hidden>
+    <button class="image-zoom-close" type="button" aria-label="Close zoomed image">&times;</button>
+    <img src="" alt="">
+  </div>
+
   <script>
     const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.08 });
     document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+    const zoom = document.querySelector('[data-image-zoom]');
+    const zoomImage = zoom.querySelector('img');
+    const zoomClose = zoom.querySelector('.image-zoom-close');
+
+    document.querySelectorAll('[data-zoomable]').forEach(image => {
+      image.closest('button').addEventListener('click', () => {
+        zoomImage.src = image.dataset.zoomSrc || image.currentSrc || image.src;
+        zoomImage.alt = image.alt;
+        zoom.hidden = false;
+        zoom.classList.remove('is-zoomed');
+        zoom.classList.toggle('is-compact', image.dataset.zoomSize === 'compact');
+        document.body.classList.add('zoom-open');
+        zoomClose.focus();
+      });
+    });
+
+    const closeZoom = () => {
+      zoom.hidden = true;
+      zoomImage.src = '';
+      document.body.classList.remove('zoom-open');
+      zoom.classList.remove('is-zoomed');
+      zoom.classList.remove('is-compact');
+    };
+
+    zoomImage.addEventListener('click', () => {
+      zoom.classList.toggle('is-zoomed');
+    });
+
+    zoomClose.addEventListener('click', closeZoom);
+    zoom.addEventListener('click', event => {
+      if (event.target === zoom) closeZoom();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !zoom.hidden) closeZoom();
+    });
   </script>
 </body>
 </html>
