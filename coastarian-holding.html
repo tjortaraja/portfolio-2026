@@ -108,31 +108,31 @@
     .water-motion::before,
     .water-motion::after {
       content: "";
-      left: -8%;
-      width: 76%;
-      height: 11%;
+      left: -10%;
+      width: 88%;
+      height: 12%;
       border-radius: 50%;
       background:
-        radial-gradient(ellipse at center, rgba(255, 255, 255, 0.36) 0 2%, transparent 3%),
-        linear-gradient(90deg, transparent, rgba(223, 247, 241, 0.48), rgba(255, 249, 237, 0.42), transparent);
-      filter: blur(10px);
+        radial-gradient(ellipse at center, rgba(255, 255, 255, 0.56) 0 1.5%, transparent 3%),
+        linear-gradient(90deg, transparent, rgba(223, 247, 241, 0.64), rgba(255, 249, 237, 0.58), transparent);
+      filter: blur(8px);
       mix-blend-mode: screen;
       transform: rotate(-3deg);
-      opacity: 0.42;
+      opacity: 0.5;
     }
 
     .water-motion::before {
-      top: 70%;
+      top: 72%;
       animation: shoreline-lap 6.5s ease-in-out infinite;
       -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 34%, #000 64%, transparent 100%);
       mask-image: linear-gradient(180deg, transparent 0, #000 34%, #000 64%, transparent 100%);
     }
 
     .water-motion::after {
-      top: 67%;
+      top: 69%;
       animation: shoreline-ripple 9s ease-in-out infinite;
-      opacity: 0.26;
-      filter: blur(16px);
+      opacity: 0.34;
+      filter: blur(14px);
       -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 42%, transparent 92%);
       mask-image: linear-gradient(180deg, transparent 0, #000 42%, transparent 92%);
     }
@@ -284,7 +284,7 @@
       .water-motion::after {
         left: -22%;
         width: 104%;
-        top: 69%;
+        top: 72%;
       }
 
       .holding-page::after {
