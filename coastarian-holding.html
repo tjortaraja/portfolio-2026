@@ -3,138 +3,319 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coastarian Creative</title>
+  <meta name="description" content="Coastarian.com is coming soon.">
+  <title>Coastarian.com | Coming Soon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;600;800&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&family=Karla:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --navy: #0F1B2D;
-      --sage: #7B9E87;
-      --sage-mid: #5F876C;
-      --surface: #FAFAF8;
-      --bg: #F2F5F3;
-      --mid: #4A5C52;
-      --border: #D4E0DA;
-    }
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
+    :root {
+      --shell: #fff9ed;
+      --foam: #dff7f1;
+      --deep: #092323;
+      --reef: #0f5e5d;
+      --sun: #f5c970;
+    }
+
+    html,
     body {
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Karla", Arial, sans-serif;
+      color: var(--shell);
+      background: var(--deep);
+      overflow: hidden;
+    }
+
+    .holding-page {
+      position: relative;
       min-height: 100vh;
       display: grid;
       place-items: center;
       padding: clamp(1.5rem, 4vw, 4rem);
-      background: var(--bg);
-      color: var(--navy);
-      font-family: 'Karla', sans-serif;
+      isolation: isolate;
     }
-    main {
-      width: min(100%, 920px);
-      display: grid;
-      gap: clamp(2.5rem, 5vw, 4.5rem);
+
+    .holding-page::before {
+      content: "";
+      position: absolute;
+      inset: -2.5%;
+      z-index: -3;
+      background-image: url("images/coastarian/kenyan-coast-hero.png");
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.02);
+      animation: coastal-breeze 18s ease-in-out infinite alternate;
     }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.7rem;
-      font-family: 'Epilogue', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--sage-mid);
+
+    .tree-motion,
+    .tree-motion::before,
+    .tree-motion::after,
+    .water-motion,
+    .water-motion::before,
+    .water-motion::after {
+      position: absolute;
+      z-index: -1;
+      pointer-events: none;
     }
-    .brand-mark {
-      width: 14px;
-      height: 14px;
+
+    .tree-motion {
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .tree-motion::before,
+    .tree-motion::after {
+      content: "";
+      inset: -2.5%;
+      background-image: url("images/coastarian/kenyan-coast-hero.png");
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.08) contrast(1.02) blur(0.4px);
+      mix-blend-mode: screen;
+    }
+
+    .tree-motion::before {
+      opacity: 0.16;
+      transform-origin: 86% 62%;
+      animation: palm-sway 4.8s ease-in-out infinite;
+      -webkit-mask-image: radial-gradient(ellipse at 82% 28%, #000 0 28%, rgba(0, 0, 0, 0.68) 42%, transparent 64%);
+      mask-image: radial-gradient(ellipse at 82% 28%, #000 0 28%, rgba(0, 0, 0, 0.68) 42%, transparent 64%);
+    }
+
+    .tree-motion::after {
+      animation: frond-gust 5.8s ease-in-out infinite reverse;
+      opacity: 0.13;
+      transform-origin: 83% 78%;
+      -webkit-mask-image: radial-gradient(ellipse at 86% 66%, #000 0 24%, rgba(0, 0, 0, 0.62) 40%, transparent 62%);
+      mask-image: radial-gradient(ellipse at 86% 66%, #000 0 24%, rgba(0, 0, 0, 0.62) 40%, transparent 62%);
+    }
+
+    .water-motion {
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .water-motion::before,
+    .water-motion::after {
+      content: "";
+      left: -8%;
+      width: 76%;
+      height: 11%;
       border-radius: 50%;
-      background: var(--sage);
-      box-shadow: 18px 0 0 var(--navy);
+      background:
+        radial-gradient(ellipse at center, rgba(255, 255, 255, 0.36) 0 2%, transparent 3%),
+        linear-gradient(90deg, transparent, rgba(223, 247, 241, 0.48), rgba(255, 249, 237, 0.42), transparent);
+      filter: blur(10px);
+      mix-blend-mode: screen;
+      transform: rotate(-3deg);
+      opacity: 0.42;
     }
+
+    .water-motion::before {
+      top: 70%;
+      animation: shoreline-lap 6.5s ease-in-out infinite;
+      -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 34%, #000 64%, transparent 100%);
+      mask-image: linear-gradient(180deg, transparent 0, #000 34%, #000 64%, transparent 100%);
+    }
+
+    .water-motion::after {
+      top: 67%;
+      animation: shoreline-ripple 9s ease-in-out infinite;
+      opacity: 0.26;
+      filter: blur(16px);
+      -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 42%, transparent 92%);
+      mask-image: linear-gradient(180deg, transparent 0, #000 42%, transparent 92%);
+    }
+
+    .holding-page::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(6, 22, 22, 0.76), rgba(6, 22, 22, 0.34) 48%, rgba(6, 22, 22, 0.16)),
+        linear-gradient(180deg, rgba(6, 22, 22, 0.2), rgba(6, 22, 22, 0.58));
+    }
+
+    .content {
+      width: min(100%, 980px);
+      display: grid;
+      justify-items: start;
+      gap: clamp(1.25rem, 2.5vw, 2rem);
+    }
+
     h1 {
       max-width: 11ch;
-      margin-top: 1.6rem;
-      font-family: 'Epilogue', sans-serif;
-      font-size: clamp(3rem, 8vw, 7.2rem);
-      line-height: 0.95;
-      letter-spacing: -0.03em;
+      font-family: "Epilogue", Arial, sans-serif;
+      font-size: clamp(3.5rem, 11vw, 9rem);
+      font-weight: 800;
+      line-height: 0.92;
+      letter-spacing: 0;
+      text-wrap: balance;
+      text-shadow: 0 8px 40px rgba(0, 0, 0, 0.44);
     }
-    .intro {
-      max-width: 57ch;
-      color: var(--mid);
-      font-size: clamp(1.08rem, 2vw, 1.35rem);
-      line-height: 1.8;
-    }
-    .panel {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 1.5rem;
-      align-items: center;
-      padding: clamp(1.4rem, 3vw, 2rem);
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--sage);
-      border-radius: 8px;
-    }
-    .panel p {
-      max-width: 54ch;
-      color: var(--mid);
-      line-height: 1.7;
-    }
-    a {
-      color: inherit;
-    }
-    .button {
+
+    .coming-soon {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0.85rem 1.15rem;
-      border-radius: 6px;
-      background: var(--navy);
-      color: var(--surface);
-      font-family: 'Epilogue', sans-serif;
+      min-height: 2.8rem;
+      padding-inline: 1.05rem;
+      border: 1px solid rgba(255, 249, 237, 0.42);
+      border-radius: 999px;
+      background: rgba(9, 35, 35, 0.26);
+      color: var(--foam);
       font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      white-space: nowrap;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.16);
     }
-    footer {
-      color: var(--mid);
-      font-size: 0.9rem;
+
+    @keyframes coastal-breeze {
+      from {
+        transform: scale(1.02) translate3d(-0.7%, 0, 0);
+      }
+      to {
+        transform: scale(1.055) translate3d(0.7%, -0.4%, 0);
+      }
     }
-    @media (max-width: 680px) {
+
+    @keyframes palm-sway {
+      0%,
+      100% {
+        transform: scale(1.025) translate3d(0, 0, 0) skewX(0deg) rotate(0deg);
+      }
+      45% {
+        transform: scale(1.04) translate3d(0.95%, -0.35%, 0) skewX(-1.9deg) rotate(-0.45deg);
+      }
+      70% {
+        transform: scale(1.035) translate3d(0.25%, 0.15%, 0) skewX(0.8deg) rotate(0.2deg);
+      }
+    }
+
+    @keyframes frond-gust {
+      0%,
+      100% {
+        transform: translate3d(0, 0, 0) skewX(0deg) rotate(0deg);
+      }
+      40% {
+        transform: translate3d(1.35%, -0.45%, 0) skewX(-3.2deg) rotate(-0.75deg);
+      }
+      72% {
+        transform: translate3d(-0.25%, 0.18%, 0) skewX(1.4deg) rotate(0.28deg);
+      }
+    }
+
+    @keyframes shoreline-lap {
+      0%,
+      100% {
+        transform: translate3d(-3%, 1.1%, 0) rotate(-3deg) scaleX(0.94);
+        opacity: 0.2;
+      }
+      46% {
+        transform: translate3d(5%, -1.2%, 0) rotate(-3deg) scaleX(1.08);
+        opacity: 0.48;
+      }
+      70% {
+        transform: translate3d(2%, -0.35%, 0) rotate(-3deg) scaleX(1.02);
+        opacity: 0.34;
+      }
+    }
+
+    @keyframes shoreline-ripple {
+      0%,
+      100% {
+        transform: translate3d(2%, 0.4%, 0) rotate(-3deg) scaleX(1);
+      }
+      50% {
+        transform: translate3d(9%, -0.8%, 0) rotate(-3deg) scaleX(1.14);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .holding-page::before,
+      .tree-motion,
+      .tree-motion::before,
+      .tree-motion::after,
+      .water-motion::before,
+      .water-motion::after {
+        animation: none;
+      }
+    }
+
+    @media (max-width: 720px) {
       body {
-        place-items: start;
+        overflow: auto;
       }
-      .panel {
-        grid-template-columns: 1fr;
+
+      .holding-page {
+        min-height: 100svh;
+        align-items: end;
+        padding: 1.25rem;
       }
-      .button {
-        width: 100%;
+
+      .holding-page::before {
+        background-position: 58% center;
+      }
+
+      .tree-motion,
+      .tree-motion::before,
+      .tree-motion::after {
+        background-position: 58% center;
+      }
+
+      .tree-motion::before,
+      .tree-motion::after {
+        opacity: 0.12;
+      }
+
+      .water-motion::before,
+      .water-motion::after {
+        left: -22%;
+        width: 104%;
+        top: 69%;
+      }
+
+      .holding-page::after {
+        background:
+          linear-gradient(180deg, rgba(6, 22, 22, 0.1), rgba(6, 22, 22, 0.72) 66%, rgba(6, 22, 22, 0.9)),
+          linear-gradient(90deg, rgba(6, 22, 22, 0.36), rgba(6, 22, 22, 0.16));
+      }
+
+      .content {
+        padding-bottom: clamp(1rem, 7vh, 4rem);
+      }
+
+      h1 {
+        max-width: 8.5ch;
+      }
+
+      .coming-soon {
+        min-height: 2.6rem;
+        font-size: 0.72rem;
       }
     }
   </style>
 </head>
 <body>
-  <main>
-    <section>
-      <p class="brand"><span class="brand-mark" aria-hidden="true"></span>Coastarian Creative</p>
-      <h1>Design work in progress.</h1>
+  <main class="holding-page" aria-label="Coastarian.com coming soon">
+    <span class="water-motion" aria-hidden="true"></span>
+    <span class="tree-motion" aria-hidden="true"></span>
+    <section class="content">
+      <h1>Coastarian.com</h1>
+      <span class="coming-soon">Coming soon</span>
     </section>
-
-    <p class="intro">Coastarian Creative is being shaped into a home for design, coaching, writing, and creative projects. The full site is coming soon.</p>
-
-    <div class="panel">
-      <p>For product design, UX research, content design, or freelance enquiries, get in touch directly.</p>
-      <a class="button" href="mailto:coastariandesign@icloud.com">Work with me</a>
-    </div>
-
-    <footer>Coastarian Creative · Remote design and research practice</footer>
   </main>
 </body>
 </html>
