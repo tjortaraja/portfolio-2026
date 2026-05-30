@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | TJ Anderson</title>
+  <link rel="stylesheet" href="styles.css?v=20260529">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      background: #0f1b2d;
+      color: #f5f7f2;
+      display: flex;
+      align-items: center;
+      padding: 4rem 1.5rem;
+    }
+
+    .error-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .error-code {
+      font-size: clamp(7rem, 20vw, 18rem);
+      line-height: 0.9;
+      font-weight: 900;
+      letter-spacing: 0;
+      margin: 0 0 2rem;
+      background-image: url("images/coastarian/kenyan-coast-hero.png");
+      background-size: cover;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .error-copy {
+      max-width: 720px;
+      font-size: clamp(1.4rem, 3vw, 2.5rem);
+      line-height: 1.25;
+      margin: 0 0 2rem;
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 700px) {
+      .error-page {
+        align-items: flex-start;
+        padding-top: 6rem;
+      }
+
+      .error-actions a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <section class="error-inner">
+      <h1 class="error-code">404</h1>
+      <p class="error-copy">Looks like you are in the wrong place. Yes we would all rather be on holiday, but back to work, my work!</p>
+      <div class="error-actions">
+        <a href="index.html" class="btn-primary">Home</a>
+        <a href="index.html#work" class="btn-secondary">Case studies</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
