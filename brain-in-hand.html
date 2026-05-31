@@ -161,8 +161,9 @@
           <button class="zoom-image-trigger" type="button" aria-label="Zoom early scamping photo">
             <img src="images/BiH/BiH%20UM%20Scamping%20cleaned%20cropped.jpg" alt="Early Brain in Hand user management scamping and design thinking" data-zoomable>
           </button>
-          <figcaption>Scamping photo, early design thinking</figcaption>
+          <figcaption>Early scamping: testing whether a single profile view could replace the three tool lookup without losing the context CST members needed</figcaption>
         </figure>
+        <p class="image-support-copy">At this stage the central question was structural: one profile or many? The scamps were testing whether consolidation was even possible without creating a view so dense it became unusable. The answer shaped everything that followed, a single profile with a subnavigation that let CST members move between depth and speed depending on what they needed in the moment.</p>
       </div>
     </div>
   </section>
@@ -171,16 +172,21 @@
   <section class="cs-section bg-surface">
     <div class="cs-inner wide fade-in">
       <p class="section-eyebrow">The Work Before the Interface</p>
-      <h2 class="section-heading">Understanding the data before designing the interface.</h2>
+      <h2 class="section-heading">Every incomplete registration was someone who didn't get the support they needed.</h2>
       <div class="divider"></div>
-      <p class="body-text section-intro">The real work here came before any screen was drawn: understanding the data, mapping the system architecture, and creating a shared foundation that the interface could be built on.</p>
+      <div class="section-intro">
+        <p class="body-text">Brain in Hand exists to help neurodivergent people live more independently. When a referral comes in, a 90 day window opens. If that registration isn't completed because the CST couldn't track where it was, couldn't see what was blocking it, or couldn't find the information they needed without switching between three separate systems, that person doesn't get access to the platform. For a neurodivergent individual waiting on support, that's not an administrative failure. It's a gap in their daily life.</p>
+        <p class="body-text">For the company, every incomplete registration represents lost revenue and, where government funding is tied to activation, lost income that directly affects what the service can offer. The CST weren't failing. They were absorbing a structural problem the data architecture had created, and carrying the cognitive load of a system that had never been designed to support the work they were actually doing.</p>
+        <p class="body-text">Before a single screen could be drawn, that architecture had to make sense.</p>
+      </div>
 
       <div class="bih-process-stack">
         <article class="bih-process-card is-split">
           <div class="bih-process-copy">
             <p class="section-eyebrow">Data Model</p>
-            <h3>Making the data coherent enough to design with.</h3>
-            <p class="body-text">Working with the Business Analyst, I mapped data relationships across all three platforms, including Funder, Programme, User, and Licence chains spanning DSA, Access to Work, Group, and Private funding types. The goal was a unified data model: a blueprint for what a single source of truth would actually contain, and the technical foundation for a GDPR compliant UK data migration. This wasn't a preliminary step. It was the design work that made everything else possible.</p>
+            <h3>Making the data coherent enough to act on.</h3>
+            <p class="body-text">Working with the Business Analyst, I mapped data relationships across all three platforms, including Funder, Programme, User, and Licence chains spanning DSA, Access to Work, Group, and Private funding types. The goal was a unified data model: a single blueprint for what a source of truth would actually contain, and the technical foundation for a GDPR compliant UK data migration.</p>
+            <p class="body-text">This wasn't preliminary work. It was the design work that determined whether the interface could be trusted at all. A profile built on disconnected data would have surfaced the wrong information, in the wrong place, at the wrong moment, and the CST would have been back to workarounds within weeks.</p>
           </div>
           <figure class="case-image-card bih-process-media">
             <button class="zoom-image-trigger" type="button" aria-label="Zoom proposed data flow from the BA">
@@ -193,8 +199,9 @@
         <article class="bih-process-card is-wide">
           <div class="bih-process-copy">
             <p class="section-eyebrow">Workflow Map</p>
-            <h3>The journey from referral to registration.</h3>
-            <p class="body-text">Eight manual steps from Purchase Order to user activation, each requiring status checks across separate systems with no automated handoffs between them. The map below traces the full journey from referral to registration and makes visible exactly where the three system handoffs created the gaps.</p>
+            <h3>Understanding where registrations were stalling and why.</h3>
+            <p class="body-text">Eight manual steps from Purchase Order to user activation. Each one requiring a status check across separate systems. No automated handoffs. No alerts when a registration was approaching the end of its 90 day window. No way to see, at a glance, which registrations were at risk.</p>
+            <p class="body-text">The workflow map made the bottlenecks visible for the first time. It showed exactly where the three system handoffs were creating delays, and gave the design a precise brief: not just a better interface, but a view that would let the CST see risk before it became a missed registration.</p>
           </div>
           <figure class="case-image-card bih-process-media">
             <button class="zoom-image-trigger" type="button" aria-label="Zoom CST workflow map">
@@ -208,7 +215,8 @@
           <div class="bih-process-copy">
             <p class="section-eyebrow">Information Architecture</p>
             <h3>From tool structure to task structure.</h3>
-            <p class="body-text">The existing IA reflected the fragmentation of three separate systems. It was deeply nested, inconsistently structured, and built around tools rather than tasks. The proposed IA consolidated this into a single profile with four clear sections, a subnavigation that replaced multiple separate pages, and a hierarchy built around how CST members actually moved through a case.</p>
+            <p class="body-text">The existing IA had been built around the shape of three separate systems, not around the work of the people using them. It was deeply nested, inconsistently structured, and required CST members to hold context in their heads that the interface should have been holding for them.</p>
+            <p class="body-text">The proposed IA consolidated everything into a single profile with four clear sections and a subnavigation built around how CST members actually moved through a case, from quick status checks to deeper case management. The structure wasn't designed around the tools. It was designed around the moment a CST member needs to know whether a registration is on track, and what to do if it isn't.</p>
           </div>
           <div class="bih-process-media-grid two-up">
             <figure class="case-image-card">
@@ -231,11 +239,11 @@
       <div class="context-pair foundation-context">
         <div class="context-box navy">
           <p class="context-label">Product Context</p>
-          <p class="context-text">The unified profile is only as reliable as the data beneath it. Getting the architecture right first wasn't a delay. It was the work.</p>
+          <p class="context-text">The unified profile is only as reliable as the data beneath it. Getting the architecture right first wasn't a delay. It was the only way to build something the CST could actually trust.</p>
         </div>
         <div class="context-box">
           <p class="context-label">Design Principle</p>
-          <p class="context-text">Cross functional collaboration at this level of technical depth is what makes an interface genuinely trustworthy. The IA is only as good as the model it's built on.</p>
+          <p class="context-text">When incomplete registrations have a human cost, the data architecture is a design problem, not a technical one.</p>
         </div>
       </div>
     </div>
@@ -441,7 +449,7 @@
       <div class="divider"></div>
       <p class="body-text">Registration status is now visible in a single view. CST members no longer maintain personal spreadsheets or calculate 90 day countdowns by hand. One profile surfaces everything: registration status, licence details, support history, and case ownership in a single place.</p>
       <p class="body-text">The GDPR compliant data migration resolved the compliance requirement that had made the existing architecture unsustainable. The unified data model supports white labelled instances for individual university and local authority clients, and fully supports the case management dashboard the CST identified as their most urgent unmet need.</p>
-      <p class="body-text">The internal team received a production ready handoff: a tested design, a clean data model, a component specification, and documented decisions about what was built, what was deferred, and why. The foundation was built to be built on.</p>
+      <p class="body-text">This was a contract engagement, so long term usage metrics sit with the internal team. What can be reported is what was delivered: a tested design, a validated data model, and a foundation documented well enough to build on without the designer in the room.</p>
 
     </div>
   </section>

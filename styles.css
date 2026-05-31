@@ -465,6 +465,14 @@ body {
   object-position: top center;
 }
 
+.image-support-copy {
+  max-width: 82ch;
+  margin: -0.4rem 0 0.7rem;
+  color: var(--mid);
+  font-size: 0.95rem;
+  line-height: 1.72;
+}
+
 .image-marker-card {
   min-height: 260px;
   display: grid;
