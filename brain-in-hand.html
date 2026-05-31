@@ -180,60 +180,57 @@
         <p class="body-text">Before a single screen could be drawn, that architecture had to make sense.</p>
       </div>
 
-      <div class="bih-process-stack">
-        <article class="bih-process-card is-split">
-          <div class="bih-process-copy">
-            <p class="section-eyebrow">Data Model</p>
-            <h3>Making the data coherent enough to act on.</h3>
-            <p class="body-text">Working with the Business Analyst, I mapped data relationships across all three platforms, including Funder, Programme, User, and Licence chains spanning DSA, Access to Work, Group, and Private funding types. The goal was a unified data model: a single blueprint for what a source of truth would actually contain, and the technical foundation for a GDPR compliant UK data migration.</p>
-            <p class="body-text">This wasn't preliminary work. It was the design work that determined whether the interface could be trusted at all. A profile built on disconnected data would have surfaced the wrong information, in the wrong place, at the wrong moment, and the CST would have been back to workarounds within weeks.</p>
-          </div>
-          <figure class="case-image-card bih-process-media">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom proposed data flow from the BA">
-              <img src="images/BiH/Proposed%20data%20flow%20from%20the%20BA%20.png" alt="Proposed data flow from the Business Analyst showing the data model foundation" data-zoomable>
+      <div class="section-image-pair bih-standard-module">
+        <div>
+          <p class="section-eyebrow">Data Model</p>
+          <h3>Making the data coherent enough to act on.</h3>
+          <p class="body-text">Working with the Business Analyst, I mapped data relationships across all three platforms, including Funder, Programme, User, and Licence chains spanning DSA, Access to Work, Group, and Private funding types. The goal was a unified data model: a single blueprint for what a source of truth would actually contain, and the technical foundation for a GDPR compliant UK data migration.</p>
+          <p class="body-text">This wasn't preliminary work. It was the design work that determined whether the interface could be trusted at all. A profile built on disconnected data would have surfaced the wrong information, in the wrong place, at the wrong moment, and the CST would have been back to workarounds within weeks.</p>
+        </div>
+        <figure class="case-image-card section-side-image bih-standard-image">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom proposed data flow from the BA">
+            <img src="images/BiH/Proposed%20data%20flow%20from%20the%20BA%20.png" alt="Proposed data flow from the Business Analyst showing the data model foundation" data-zoomable>
+          </button>
+          <figcaption>Proposed data flow from the BA</figcaption>
+        </figure>
+      </div>
+
+      <div class="section-image-pair bih-standard-module">
+        <figure class="case-image-card section-side-image bih-standard-image">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom CST workflow map">
+            <img src="images/BiH/CST%20Workflow.png" alt="CST workflow map showing eight steps from purchase order to user activation" data-zoomable>
+          </button>
+          <figcaption>CST workflow map</figcaption>
+        </figure>
+        <div>
+          <p class="section-eyebrow">Workflow Map</p>
+          <h3>Understanding where registrations were stalling and why.</h3>
+          <p class="body-text">Eight manual steps from Purchase Order to user activation. Each one requiring a status check across separate systems. No automated handoffs. No alerts when a registration was approaching the end of its 90 day window. No way to see, at a glance, which registrations were at risk.</p>
+          <p class="body-text">The workflow map made the bottlenecks visible for the first time. It showed exactly where the three system handoffs were creating delays, and gave the design a precise brief: not just a better interface, but a view that would let the CST see risk before it became a missed registration.</p>
+        </div>
+      </div>
+
+      <div class="bih-standard-module">
+        <div class="bih-standard-copy">
+          <p class="section-eyebrow">Information Architecture</p>
+          <h3>From tool structure to task structure.</h3>
+          <p class="body-text">The existing IA had been built around the shape of three separate systems, not around the work of the people using them. It was deeply nested, inconsistently structured, and required CST members to hold context in their heads that the interface should have been holding for them.</p>
+          <p class="body-text">The proposed IA consolidated everything into a single profile with four clear sections and a subnavigation built around how CST members actually moved through a case, from quick status checks to deeper case management. The structure wasn't designed around the tools. It was designed around the moment a CST member needs to know whether a registration is on track, and what to do if it isn't.</p>
+        </div>
+        <div class="case-shot-grid two-up bih-standard-gallery">
+          <figure class="case-image-card">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom current user information architecture">
+              <img src="images/BiH/User%20-%20current.png" alt="Current user information architecture before redesign" data-zoomable>
             </button>
-            <figcaption>Proposed data flow from the BA</figcaption>
+            <figcaption>Current user IA</figcaption>
           </figure>
-        </article>
-
-        <article class="bih-process-card is-wide">
-          <div class="bih-process-copy">
-            <p class="section-eyebrow">Workflow Map</p>
-            <h3>Understanding where registrations were stalling and why.</h3>
-            <p class="body-text">Eight manual steps from Purchase Order to user activation. Each one requiring a status check across separate systems. No automated handoffs. No alerts when a registration was approaching the end of its 90 day window. No way to see, at a glance, which registrations were at risk.</p>
-            <p class="body-text">The workflow map made the bottlenecks visible for the first time. It showed exactly where the three system handoffs were creating delays, and gave the design a precise brief: not just a better interface, but a view that would let the CST see risk before it became a missed registration.</p>
-          </div>
-          <figure class="case-image-card bih-process-media">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom CST workflow map">
-              <img src="images/BiH/CST%20Workflow.png" alt="CST workflow map showing eight steps from purchase order to user activation" data-zoomable>
+          <figure class="case-image-card">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom proposed user information architecture">
+              <img src="images/BiH/User%20-%20proposed.png" alt="Proposed user information architecture after redesign" data-zoomable>
             </button>
-            <figcaption>CST workflow map</figcaption>
+            <figcaption>Proposed user IA</figcaption>
           </figure>
-        </article>
-
-        <article class="bih-process-card is-wide">
-          <div class="bih-process-copy">
-            <p class="section-eyebrow">Information Architecture</p>
-            <h3>From tool structure to task structure.</h3>
-            <p class="body-text">The existing IA had been built around the shape of three separate systems, not around the work of the people using them. It was deeply nested, inconsistently structured, and required CST members to hold context in their heads that the interface should have been holding for them.</p>
-            <p class="body-text">The proposed IA consolidated everything into a single profile with four clear sections and a subnavigation built around how CST members actually moved through a case, from quick status checks to deeper case management. The structure wasn't designed around the tools. It was designed around the moment a CST member needs to know whether a registration is on track, and what to do if it isn't.</p>
-          </div>
-          <div class="bih-process-media-grid two-up">
-            <figure class="case-image-card">
-              <button class="zoom-image-trigger" type="button" aria-label="Zoom current user information architecture">
-                <img src="images/BiH/User%20-%20current.png" alt="Current user information architecture before redesign" data-zoomable>
-              </button>
-              <figcaption>Current user IA</figcaption>
-            </figure>
-            <figure class="case-image-card">
-              <button class="zoom-image-trigger" type="button" aria-label="Zoom proposed user information architecture">
-                <img src="images/BiH/User%20-%20proposed.png" alt="Proposed user information architecture after redesign" data-zoomable>
-              </button>
-              <figcaption>Proposed user IA</figcaption>
-            </figure>
-          </div>
-        </article>
-
+        </div>
       </div>
 
       <div class="context-pair foundation-context">
@@ -256,38 +253,38 @@
       <h2 class="section-heading">One profile. Everything a CST member needs. Nothing they don't.</h2>
       <div class="divider"></div>
       <p class="body-text">The unified user profile was designed as a single source of truth, a hub where CST members could see everything and take action without switching tools. The shadowing sessions had shown two distinct working modes: quick status checks many times a day, and deeper case management when actively processing a registration. The design needed to serve both without compromise.</p>
-      <div class="bih-design-stack">
-        <article class="bih-design-feature">
-          <div class="bih-design-copy">
-            <p class="section-eyebrow">Status at a Glance</p>
-            <h3>Quick View</h3>
-            <p>Born from a single piece of feedback heard during shadowing: "I need to see registration status without opening the full profile." The Quick View is a light touch overlay surfacing the 90 day countdown, case owner, registration status, and key actions. The most frequent manual lookup task was eliminated in seconds. Existing components were reordered and prioritised rather than rebuilt, reducing dev overhead while delivering immediate value.</p>
-          </div>
-          <figure class="case-image-card bih-design-media">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom Quick View interface">
-              <img src="images/BiH/Quick%20View.png" alt="Brain in Hand Quick View interface showing registration status and case details" data-zoomable>
-            </button>
-            <figcaption>Quick View: registration status surfaced without opening the full profile</figcaption>
-          </figure>
-        </article>
+      <div class="section-image-pair bih-standard-module">
+        <div>
+          <p class="section-eyebrow">Status at a Glance</p>
+          <h3>Quick View</h3>
+          <p class="body-text">Born from a single piece of feedback heard during shadowing: "I need to see registration status without opening the full profile." The Quick View is a light touch overlay surfacing the 90 day countdown, case owner, registration status, and key actions. The most frequent manual lookup task was eliminated in seconds. Existing components were reordered and prioritised rather than rebuilt, reducing dev overhead while delivering immediate value.</p>
+        </div>
+        <figure class="case-image-card section-side-image bih-standard-image">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom Quick View interface">
+            <img src="images/BiH/Quick%20View.png" alt="Brain in Hand Quick View interface showing registration status and case details" data-zoomable>
+          </button>
+          <figcaption>Quick View: registration status surfaced without opening the full profile</figcaption>
+        </figure>
+      </div>
 
-        <article class="bih-design-feature">
-          <div class="bih-design-copy">
-            <p class="section-eyebrow">Case Management</p>
-            <h3>Full Profile</h3>
-            <p>The single source of truth. Organised into four sections: user summary, registration timeline, package details, and support history. The order reflected how CST members said they actually moved through a case. The Packages section introduced the concept of episodes of use, separating a user's journey as a DSA student from their later journey as an Access to Work recipient. This made the history legible without overloading the active view.</p>
-          </div>
-          <figure class="case-image-card bih-design-media">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom Full Profile interface with menu expanded">
-              <img src="images/BiH/Profile%20with%20menu%20expanded.png" alt="Brain in Hand full profile interface with navigation menu expanded" data-zoomable>
-            </button>
-            <figcaption>Full Profile: four sections in the order CST members worked through a case</figcaption>
-          </figure>
-        </article>
+      <div class="section-image-pair bih-standard-module">
+        <div>
+          <p class="section-eyebrow">Case Management</p>
+          <h3>Full Profile</h3>
+          <p class="body-text">The single source of truth. Organised into four sections: user summary, registration timeline, package details, and support history. The order reflected how CST members said they actually moved through a case. The Packages section introduced the concept of episodes of use, separating a user's journey as a DSA student from their later journey as an Access to Work recipient. This made the history legible without overloading the active view.</p>
+        </div>
+        <figure class="case-image-card section-side-image bih-standard-image">
+          <button class="zoom-image-trigger" type="button" aria-label="Zoom Full Profile interface with menu expanded">
+            <img src="images/BiH/Profile%20with%20menu%20expanded.png" alt="Brain in Hand full profile interface with navigation menu expanded" data-zoomable>
+          </button>
+          <figcaption>Full Profile: four sections in the order CST members worked through a case</figcaption>
+        </figure>
       </div>
 
       <div class="bih-flow-section">
-        <h3 class="decision-section-title">The new profile flow</h3>
+        <p class="section-eyebrow">Profile Flow</p>
+        <h2 class="section-heading">The new profile flow</h2>
+        <div class="divider"></div>
         <p class="body-text">The screens below show the full flow, from the entry point through to package editing.</p>
         <div class="bih-flow-sequence" aria-label="New unified profile flow">
           <div class="bih-flow-track">
@@ -331,13 +328,13 @@
         </div>
       </div>
 
-      <div class="bih-package-note">
-        <div class="bih-package-copy">
+      <div class="section-image-pair bih-standard-module">
+        <div>
           <p class="section-eyebrow">Package Short Term Solution</p>
           <h3>A deliberate fallback for phase one.</h3>
           <p class="body-text">Where multiple packages couldn't be supported in this phase, a stripped back view surfaced the single active package clearly. It was a deliberate fallback, not an oversight.</p>
         </div>
-        <figure class="case-image-card bih-package-media">
+        <figure class="case-image-card section-side-image bih-standard-image">
           <button class="zoom-image-trigger" type="button" aria-label="Zoom Package Short-Term Solution screen">
             <img src="images/BiH/Package%20Short-Term%20Solution.png" alt="Brain in Hand Package Short-Term Solution screen" data-zoomable>
           </button>
@@ -345,13 +342,13 @@
         </figure>
       </div>
 
-      <article class="bih-process-card is-wide bih-handoff-scope">
-        <div class="bih-process-copy">
+      <div class="bih-standard-module">
+        <div class="bih-standard-copy">
           <p class="section-eyebrow">Technical Scope</p>
           <h3>Documenting what could be reused and what needed to be built.</h3>
           <p class="body-text">Stakeholder interviews with the CRM and Dev teams surfaced constraints that shaped the phasing decisions, including the choice to defer HubSpot integration and focus on a stable foundation first. A component library audit against the Vuetify upgrade identified what could be reused and where new patterns were needed. Content mapping grouped every data point into four logical clusters: registration, referral, package, and support. These clusters became the information architecture the profile was built on.</p>
         </div>
-        <div class="bih-process-media-grid docs">
+        <div class="technical-scope-gallery bih-standard-docs">
           <figure class="case-image-card">
             <button class="zoom-image-trigger" type="button" aria-label="Zoom anatomy documentation">
               <img src="images/BiH/Anatomy.png" alt="Brain in Hand component anatomy documentation" data-zoomable>
@@ -383,17 +380,17 @@
             <figcaption>Palette</figcaption>
           </figure>
         </div>
-      </article>
+      </div>
 
-      <section class="framework-section" aria-labelledby="handoff-heading">
-        <div class="framework-copy">
+      <section class="section-image-pair bih-standard-module" aria-labelledby="handoff-heading">
+        <div>
           <p class="section-eyebrow">Handoff</p>
           <h3 id="handoff-heading">Designed to be built without the designer in the room.</h3>
-          <p>The prototype delivered to the dev team wasn't a set of static screens. It included anatomy documentation, component specs with exact values, a spacing system, colour token mapping, and "use once" annotations guiding reuse decisions throughout the build.</p>
-          <p>The Vuetify component upgrade running in parallel shaped every handoff decision. Where new components were unavoidable, they were specified precisely. Where existing components could be reused, that was called out explicitly, reducing build ambiguity and keeping the team moving without constant designer input.</p>
-          <p>That was the intention from the start. A handoff that needs the designer to explain it hasn't finished being designed.</p>
+          <p class="body-text">The prototype delivered to the dev team wasn't a set of static screens. It included anatomy documentation, component specs with exact values, a spacing system, colour token mapping, and "use once" annotations guiding reuse decisions throughout the build.</p>
+          <p class="body-text">The Vuetify component upgrade running in parallel shaped every handoff decision. Where new components were unavoidable, they were specified precisely. Where existing components could be reused, that was called out explicitly, reducing build ambiguity and keeping the team moving without constant designer input.</p>
+          <p class="body-text">That was the intention from the start. A handoff that needs the designer to explain it hasn't finished being designed.</p>
         </div>
-        <figure class="prototype-video-card handoff-prototype-video">
+        <figure class="prototype-video-card section-side-image">
           <video controls playsinline preload="metadata" aria-label="Handover prototype for internal team usage">
             <source src="./images/BiH/Prototype.mp4" type="video/mp4">
           </video>
@@ -401,27 +398,28 @@
         </figure>
       </section>
 
-      <h3 class="decision-section-title">Decisions worth naming.</h3>
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-num">01</div>
-          <span class="step-tag">Accessibility</span>
-          <h3 class="step-title">Accessibility as a design input</h3>
-          <p class="step-body">Brain in Hand's users are neurodivergent. That made accessibility a design input, not a compliance checkbox. Colour contrast was validated against WCAG standards throughout, not at the end of the process, but at every decision point along the way. A proposed colour token system mapped existing brand colours to a structured palette, giving the dev team a consistent reference for every component state.</p>
+      <section class="bih-decisions-section">
+        <p class="section-eyebrow">Design Decisions</p>
+        <h2 class="section-heading">Decisions worth naming</h2>
+        <div class="divider"></div>
+        <div class="reflect-grid">
+          <div class="reflect-card">
+            <div class="reflect-num">01</div>
+            <h4 class="reflect-title">Accessibility as a design input</h4>
+            <p class="reflect-body">Brain in Hand's users are neurodivergent. That made accessibility a design input, not a compliance checkbox. Colour contrast was validated against WCAG standards throughout, not at the end of the process, but at every decision point along the way. A proposed colour token system mapped existing brand colours to a structured palette, giving the dev team a consistent reference for every component state.</p>
+          </div>
+          <div class="reflect-card">
+            <div class="reflect-num">02</div>
+            <h4 class="reflect-title">Stability over new patterns</h4>
+            <p class="reflect-body">Drawers were explored as an alternative for editing in context. Modals were chosen deliberately in response to the Vuetify component upgrade happening in parallel. Fewer new components meant a more stable build. A visible tradeoff, made early and documented explicitly.</p>
+          </div>
+          <div class="reflect-card">
+            <div class="reflect-num">03</div>
+            <h4 class="reflect-title">Deferred, not dropped</h4>
+            <p class="reflect-body">A dashboard showing case ownership, outstanding tasks, and countdown summaries across all active registrations was what every discovery conversation pointed toward. It was deferred, not dropped. The data model fully supports it. The decision was documented, communicated, and handed over as the next sprint defined.</p>
+          </div>
         </div>
-        <div class="step-card">
-          <div class="step-num">02</div>
-          <span class="step-tag">Technical Scope</span>
-          <h3 class="step-title">Stability over new patterns</h3>
-          <p class="step-body">Drawers were explored as an alternative for editing in context. Modals were chosen deliberately in response to the Vuetify component upgrade happening in parallel. Fewer new components meant a more stable build. A visible tradeoff, made early and documented explicitly.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">03</div>
-          <span class="step-tag">Phasing</span>
-          <h3 class="step-title">Deferred, not dropped</h3>
-          <p class="step-body">A dashboard showing case ownership, outstanding tasks, and countdown summaries across all active registrations was what every discovery conversation pointed toward. It was deferred, not dropped. The data model fully supports it. The decision was documented, communicated, and handed over as the next sprint defined.</p>
-        </div>
-      </div>
+      </section>
     </div>
   </section>
 
