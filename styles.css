@@ -465,6 +465,23 @@ body {
   object-position: top center;
 }
 
+.evidence-intro {
+  margin-top: var(--case-tight-gap);
+}
+
+.evidence-scamping {
+  margin-top: var(--case-tight-gap);
+}
+
+.evidence-scamping .section-side-image img,
+.evidence-scamping .zoom-image-trigger img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: top center;
+}
+
 .image-support-copy {
   max-width: 82ch;
   margin: -0.4rem 0 0.7rem;
