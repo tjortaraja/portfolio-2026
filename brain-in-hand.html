@@ -28,7 +28,7 @@
   <header class="cs-hero case-hero-with-image" style="--case-hero-image: url('images/BiH/BiH%20Hero%20b.png'); --case-hero-right: -5rem; --case-hero-top: 11rem; --case-hero-image-position: right top;">
     <div class="cs-hero-inner fade-in">
       <p class="eyebrow-sm">Case Study · Brain in Hand · 2023</p>
-      <h1 class="cs-title">From fragmented systems to a single source of truth</h1>
+      <h1 class="cs-title">From fragmented workflows to a single source of truth</h1>
       <p class="cs-subtitle">A B2B SaaS platform serving 25,000 neurodivergent individuals had a data problem nobody had named yet. The real cost was carried by the people working around it every day.</p>
       <div class="cs-meta">
         <div><p class="cs-meta-label">Role</p><p class="cs-meta-value">Lead Product Designer</p></div>
@@ -51,7 +51,7 @@
         </div>
         <div>
           <p class="body-text">Data had grown organically across three separate platforms: Insightly for CRM, FreshDesk for support, and the core Brain in Hand platform for registration and licencing. None of them talked to each other. Changing privacy laws had added a compliance deadline to a structural problem that already existed: user data hosted on US servers needed migrating to UK infrastructure - and that migration couldn't happen safely until the data architecture made sense.</p>
-          <p class="body-text">The core problem wasn't a lack of data. It was that the data was <strong>invisible and disconnected</strong> - and the people who needed it most were paying the price in time, workarounds, and risk.</p>
+          <p class="body-text">The core problem wasn't a lack of data. It was that the data was <strong>invisible and disconnected</strong>, scattered across systems that had no way to talk to each other.</p>
         </div>
       </div>
 
@@ -118,7 +118,7 @@
   <section class="cs-section bg-light" id="found">
     <div class="cs-inner wide fade-in">
       <p class="section-eyebrow">What I Found</p>
-      <h2 class="section-heading">The CST weren't the problem.<br>The system hadn't kept up with them.</h2>
+      <h2 class="section-heading">The CST weren't the problem.<br>The tools hadn't kept pace with the work.</h2>
       <div class="divider"></div>
       <div class="two-col">
         <div>
@@ -150,9 +150,9 @@
       <div class="evidence-shots">
         <figure class="case-image-card">
           <button class="zoom-image-trigger" type="button" aria-label="Zoom CST workflow map">
-            <img src="images/BiH/Processing%20a%20Referral.png" alt="CST workflow map showing eight steps from purchase order to user activation" data-zoomable>
+            <img src="images/BiH/Processing-a-Referral.png" alt="CST workflow map showing eight steps from purchase order to user activation" data-zoomable>
           </button>
-          <figcaption>CST workflow map - eight steps from Purchase Order to user activation</figcaption>
+          <figcaption>Workflow map: processing a referral end to end</figcaption>
         </figure>
         <figure class="case-image-card">
           <button class="zoom-image-trigger" type="button" aria-label="Zoom early scamping photo">
@@ -167,10 +167,10 @@
   <!-- BEFORE ANY SCREEN WAS DRAWN -->
   <section class="cs-section bg-surface">
     <div class="cs-inner wide fade-in">
-      <p class="section-eyebrow">Foundation Work</p>
-      <h2 class="section-heading">The work that came before the interface.</h2>
+      <p class="section-eyebrow">The Work Before the Interface</p>
+      <h2 class="section-heading">Understanding the data before designing the interface.</h2>
       <div class="divider"></div>
-      <p class="body-text section-intro">The real work here came before any screen: understanding the data, mapping the system architecture, and building a shared foundation for a single interface to reliably surface it.</p>
+      <p class="body-text section-intro">The real work here came before any screen was drawn: understanding the data, mapping the system architecture, and creating a shared foundation that the interface could be built on.</p>
 
       <div class="foundation-stack">
         <article class="foundation-block">
@@ -189,7 +189,8 @@
         <article class="foundation-block">
           <div>
             <h3>Workflow map</h3>
-            <p class="body-text">Eight manual steps from Purchase Order to user activation, each requiring status checks across separate systems with no automated handoffs between them. The map below traces the full referral-to-registration journey and makes visible exactly where the three-system handoffs created the gaps.</p>
+            <p class="body-text">Eight manual steps from Purchase Order to user activation, each requiring status checks across separate systems with no automated handoffs between them.</p>
+            <p class="body-text">The map below traces the full referral-to-registration journey and makes visible exactly where the three-system handoffs created the gaps.</p>
           </div>
           <figure class="case-image-card">
             <button class="zoom-image-trigger" type="button" aria-label="Zoom CST workflow map">
@@ -280,36 +281,38 @@
       <h2 class="section-heading">One profile. Everything a CST member needs. Nothing they don't.</h2>
       <div class="divider"></div>
       <p class="body-text">The unified user profile was designed as a single source of truth - a hub where CST members could see everything and take action without switching tools. The shadowing sessions had shown two distinct working modes: quick status checks many times a day, and deeper case management when actively processing a registration. The design needed to serve both without compromise.</p>
-      <div class="card-grid-2">
-        <div class="design-card">
-          <div class="design-card-head">
-            <p class="design-card-tag">Status at a Glance</p>
-            <h3 class="design-card-title">Quick View</h3>
+      <div class="design-feature-list">
+        <article class="design-feature">
+          <div class="design-card">
+            <div class="design-card-head">
+              <p class="design-card-tag">Status at a Glance</p>
+              <h3 class="design-card-title">Quick View</h3>
+            </div>
+            <div class="design-card-body">Born from a single piece of feedback heard during shadowing: "I need to see registration status without opening the full profile." The Quick View is a light-touch overlay surfacing the 90-day countdown, case owner, registration status, and key actions - the most frequent manual lookup task, eliminated in seconds. Existing components reordered and prioritised rather than rebuilt - reducing dev overhead while delivering immediate value.</div>
           </div>
-          <div class="design-card-body">Born from a single piece of feedback heard during shadowing: "I need to see registration status without opening the full profile." The Quick View is a light-touch overlay surfacing the 90-day countdown, case owner, registration status, and key actions - the most frequent manual lookup task, eliminated in seconds. Existing components reordered and prioritised rather than rebuilt - reducing dev overhead while delivering immediate value.</div>
-        </div>
-        <div class="design-card">
-          <div class="design-card-head" style="background:var(--sage-mid);">
-            <p class="design-card-tag">Case Management</p>
-            <h3 class="design-card-title">Full Profile</h3>
-          </div>
-          <div class="design-card-body">The single source of truth. Organised into four sections - user summary, registration timeline, package details, and support history - in the order CST members said they actually moved through a case. The Packages section introduced the concept of episodes of use, separating a user's journey as a DSA student from their later journey as an Access to Work recipient - making the history legible without overloading the active view. Edits happen within modals to keep users in context and reduce the risk of losing work mid-session.</div>
-        </div>
-      </div>
+          <figure class="case-image-card bih-design-shot">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom Quick View interface">
+              <img src="images/BiH/Quick%20View.png" alt="Brain in Hand Quick View interface showing registration status and case details" data-zoomable>
+            </button>
+            <figcaption>Quick View: registration status surfaced without opening the full profile</figcaption>
+          </figure>
+        </article>
 
-      <div class="case-shot-grid two-up bih-design-shots">
-        <figure class="case-image-card">
-          <button class="zoom-image-trigger" type="button" aria-label="Zoom Quick View interface">
-            <img src="images/BiH/Quick%20View.png" alt="Brain in Hand Quick View interface showing registration status and case details" data-zoomable>
-          </button>
-          <figcaption>Quick View: registration status surfaced without opening the full profile</figcaption>
-        </figure>
-        <figure class="case-image-card">
-          <button class="zoom-image-trigger" type="button" aria-label="Zoom Full Profile interface with menu expanded">
-            <img src="images/BiH/Profile%20with%20menu%20expanded.png" alt="Brain in Hand full profile interface with navigation menu expanded" data-zoomable>
-          </button>
-          <figcaption>Full Profile: four sections in the order CST members worked through a case</figcaption>
-        </figure>
+        <article class="design-feature">
+          <div class="design-card">
+            <div class="design-card-head" style="background:var(--sage-mid);">
+              <p class="design-card-tag">Case Management</p>
+              <h3 class="design-card-title">Full Profile</h3>
+            </div>
+            <div class="design-card-body">The single source of truth. Organised into four sections - user summary, registration timeline, package details, and support history - in the order CST members said they actually moved through a case. The Packages section introduced the concept of episodes of use, separating a user's journey as a DSA student from their later journey as an Access to Work recipient - making the history legible without overloading the active view. Edits happen within modals to keep users in context and reduce the risk of losing work mid-session.</div>
+          </div>
+          <figure class="case-image-card bih-design-shot">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom Full Profile interface with menu expanded">
+              <img src="images/BiH/Profile%20with%20menu%20expanded.png" alt="Brain in Hand full profile interface with navigation menu expanded" data-zoomable>
+            </button>
+            <figcaption>Full Profile: four sections in the order CST members worked through a case</figcaption>
+          </figure>
+        </article>
       </div>
 
       <div class="profile-flow-section">
@@ -322,37 +325,37 @@
               <button class="zoom-image-trigger" type="button" aria-label="Zoom profile preview screen">
                 <img src="images/BiH/UPPreview.png" alt="Brain in Hand user profile preview screen" data-zoomable>
               </button>
-              <figcaption><span>01</span>Profile preview</figcaption>
+              <figcaption><span>01</span>User profile: the entry point for every CST lookup</figcaption>
             </figure>
             <figure class="case-image-card bih-flow-step">
               <button class="zoom-image-trigger" type="button" aria-label="Zoom Overview screen">
                 <img src="images/BiH/Overview.png" alt="Brain in Hand Overview screen" data-zoomable>
               </button>
-              <figcaption><span>02</span>Overview tab</figcaption>
+              <figcaption><span>02</span>Overview tab: registration status, case owner, and key actions at a glance</figcaption>
             </figure>
             <figure class="case-image-card bih-flow-step">
               <button class="zoom-image-trigger" type="button" aria-label="Zoom User Details screen">
                 <img src="images/BiH/UserDetails.png" alt="Brain in Hand User Details screen" data-zoomable>
               </button>
-              <figcaption><span>03</span>User details</figcaption>
+              <figcaption><span>03</span>User details: personal information and referral context in one place</figcaption>
             </figure>
             <figure class="case-image-card bih-flow-step">
               <button class="zoom-image-trigger" type="button" aria-label="Zoom Quick View expanded screen">
                 <img src="images/BiH/Quickview.png" alt="Brain in Hand Quick View expanded screen" data-zoomable>
               </button>
-              <figcaption><span>04</span>Quick View expanded</figcaption>
+              <figcaption><span>04</span>Quick View expanded: full registration timeline without leaving the list</figcaption>
             </figure>
             <figure class="case-image-card bih-flow-step">
               <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages screen">
                 <img src="images/BiH/Package.png" alt="Brain in Hand Packages screen" data-zoomable>
               </button>
-              <figcaption><span>05</span>Package details</figcaption>
+              <figcaption><span>05</span>Packages tab: licence type, package status, and renewal details</figcaption>
             </figure>
             <figure class="case-image-card bih-flow-step">
               <button class="zoom-image-trigger" type="button" aria-label="Zoom Packages Expanded screen">
                 <img src="images/BiH/Package%20Expanded.png" alt="Brain in Hand Packages Expanded screen" data-zoomable>
               </button>
-              <figcaption><span>06</span>Expanded package view</figcaption>
+              <figcaption><span>06</span>Packages expanded: editable package fields within a modal</figcaption>
             </figure>
           </div>
 
@@ -363,13 +366,13 @@
                 <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in old page screen">
                   <img src="images/BiH/Edit%20in%20old%20page.png" alt="Brain in Hand Edit in old page screen" data-zoomable>
                 </button>
-                <figcaption>Legacy edit page</figcaption>
+                <figcaption>Previous pattern: editing triggered a full page reload</figcaption>
               </figure>
               <figure class="case-image-card">
                 <button class="zoom-image-trigger" type="button" aria-label="Zoom Edit in modal screen">
                   <img src="images/BiH/Edit%20in%20modal.png" alt="Brain in Hand Edit in modal screen" data-zoomable>
                 </button>
-                <figcaption>Focused edit modal</figcaption>
+                <figcaption>Chosen pattern: editing within a modal keeps the user in context</figcaption>
               </figure>
             </div>
           </div>
@@ -384,7 +387,7 @@
             <button class="zoom-image-trigger" type="button" aria-label="Zoom Package Short-Term Solution screen">
               <img src="images/BiH/Package%20Short-Term%20Solution.png" alt="Brain in Hand Package Short-Term Solution screen" data-zoomable>
             </button>
-            <figcaption>Short-term package fallback for the first release</figcaption>
+            <figcaption>Short-term packages: temporary support arrangements surfaced separately to avoid cluttering the main package view</figcaption>
           </figure>
         </div>
       </div>
@@ -419,9 +422,9 @@
   <section class="cs-section bg-surface" id="outcomes">
     <div class="cs-inner fade-in">
       <p class="section-eyebrow">What Changed</p>
-      <h2 class="section-heading">The workarounds stopped. The foundation stayed.</h2>
+      <h2 class="section-heading">From three disconnected tools to one - and a foundation built to last.</h2>
       <div class="divider"></div>
-      <p class="body-text">Manual status tracking is gone. CST members no longer maintain personal spreadsheets or calculate 90-day countdowns by hand. The three-system lookup that had defined the team's daily workflow no longer exists. One profile surfaces everything - registration status, licence details, support history, case ownership - in a single view.</p>
+      <p class="body-text">Registration status is now visible in a single view. CST members no longer maintain personal spreadsheets or calculate 90-day countdowns by hand. One profile surfaces everything - registration status, licence details, support history, case ownership - in a single place.</p>
       <p class="body-text">The GDPR-compliant data migration resolved the compliance requirement that had made the existing architecture unsustainable. The unified data model supports white-labelled instances for individual university and local authority clients, and fully supports the case management dashboard the CST identified as their most urgent unmet need.</p>
       <p class="body-text">This was a contract engagement. The brief was to define and validate the unified profile - and that's what was delivered. The internal team received a production-ready handoff: a tested design, a clean data model, a component specification, and documented decisions about what was built, what was deferred, and why. The foundation was built to be built on.</p>
 
@@ -438,7 +441,7 @@
   <section class="cs-section bg-light">
     <div class="cs-inner wide fade-in">
       <p class="section-eyebrow">What I Carry Forward</p>
-      <h2 class="section-heading">The principles this project sharpened.</h2>
+      <h2 class="section-heading">What this project sharpened in me.</h2>
       <div class="divider"></div>
       <div class="reflect-grid">
         <div class="reflect-card key"><div class="reflect-num">01</div><h4 class="reflect-title">Knowing when the foundation is the deliverable</h4><p class="reflect-body">Every discovery conversation pointed toward a dashboard - case ownership, outstanding tasks, countdowns across all active registrations. That view wasn't in scope for this contract, and deferring it was the right call. The data model was designed from the start to support it. Knowing the difference between what belongs in this sprint and what belongs in the next one - and being able to articulate that clearly to the team - is part of what senior design experience looks like.</p></div>

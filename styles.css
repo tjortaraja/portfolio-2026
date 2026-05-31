@@ -1561,15 +1561,26 @@ a.case-top-link svg {
 .case-shot-grid.two-up {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.bih-design-shots {
-  margin-top: 1.5rem;
+.design-feature-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
-.bih-design-shots .zoom-image-trigger {
+.design-feature {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  gap: 1.4rem;
+  align-items: stretch;
+}
+.design-feature .design-card {
+  height: 100%;
+}
+.bih-design-shot .zoom-image-trigger {
   height: clamp(360px, 42vw, 520px);
   overflow: hidden;
   background: #eef3f3;
 }
-.bih-design-shots .case-image-card img {
+.bih-design-shot img {
   height: auto;
   max-height: none;
   object-fit: contain;
@@ -2438,7 +2449,7 @@ a.case-top-link svg {
   }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
   .card-grid-3, .steps-grid, .mvp-additions { grid-template-columns: 1fr; }
-  .card-grid-2, .hyp-grid, .reflect-grid, .decision-list, .technical-scope-gallery, .bih-branch-grid, .bih-short-term-section { grid-template-columns: 1fr; }
+  .card-grid-2, .hyp-grid, .reflect-grid, .decision-list, .technical-scope-gallery, .bih-branch-grid, .bih-short-term-section, .design-feature { grid-template-columns: 1fr; }
   .cs-meta { gap: 1.5rem; }
   .cs-footer { padding: 3rem 1.5rem; }
   .case-top-link-wrap { padding: 1rem 1.5rem; }
