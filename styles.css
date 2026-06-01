@@ -164,6 +164,16 @@ body {
   text-wrap: balance;
 }
 
+.section-heading-sm {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.18;
+  color: var(--navy);
+  margin: 0 0 0.9rem;
+  text-wrap: balance;
+}
+
 .divider {
   width: 3rem;
   height: 2px;
@@ -308,6 +318,11 @@ body {
 .case-hero-with-image .cs-subtitle,
 .case-hero-with-image .cs-meta {
   max-width: 840px;
+}
+@media (min-width: 1600px) {
+  .penny-hero-image::after {
+    right: 8rem;
+  }
 }
 .eyebrow-sm {
   font-size: 0.74rem;
@@ -601,6 +616,215 @@ body {
   color: var(--mid);
   font-size: 0.92rem;
   line-height: 1.55;
+}
+
+.image-marker-card.wide {
+  min-height: 240px;
+  margin-top: 1.5rem;
+}
+
+.image-marker-card.tall {
+  min-height: 360px;
+}
+
+.penny-marker {
+  margin-top: 1.2rem;
+}
+
+.penny-stats-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+
+.penny-role-intro {
+  margin-bottom: 1.5rem;
+}
+
+.penny-detail-grid {
+  margin-top: 2rem;
+}
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.35rem, 2vw, 1.75rem);
+  margin-top: 2rem;
+}
+
+.persona-card,
+.journey-card,
+.outcome-step {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.6rem;
+  border-left: 4px solid var(--sage-mid);
+}
+
+.persona-card:nth-child(2),
+.journey-card:nth-child(2),
+.outcome-step:nth-child(2) {
+  border-left-color: var(--navy-mid);
+}
+
+.persona-card:nth-child(3),
+.outcome-step:nth-child(3) {
+  border-left-color: var(--soft);
+}
+
+.persona-name,
+.journey-title,
+.outcome-step-title {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.persona-name {
+  font-size: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.persona-need,
+.journey-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage-mid);
+  margin-bottom: 0.8rem;
+}
+
+.persona-body,
+.journey-body,
+.journey-subtitle,
+.outcome-step-body {
+  color: var(--mid);
+  font-size: 0.9rem;
+  line-height: 1.72;
+}
+
+.journey-grid,
+.outcome-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.35rem, 2vw, 1.75rem);
+  align-items: stretch;
+}
+
+.journey-card {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.journey-head {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.journey-title {
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.journey-subtitle {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.card-sort-finding {
+  margin: 1.4rem 0 0;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.card-sort-label {
+  margin: 0 0 0.85rem;
+  color: var(--sage-mid);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.card-sort-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+}
+
+.card-sort-terms span {
+  display: inline-flex;
+  padding: 0.28rem 0.55rem;
+  border-radius: 4px;
+  background: var(--sage-light);
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.convo-box {
+  margin-top: 1.4rem;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.convo-label {
+  margin: 0 0 1rem;
+  color: var(--sage-mid);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.convo-message {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.msg {
+  max-width: 92%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.msg.app,
+.msg.alert {
+  justify-self: start;
+  background: #edf4f2;
+  color: var(--navy);
+}
+
+.msg.user {
+  justify-self: end;
+  background: var(--navy);
+  color: var(--surface);
+}
+
+.outcome-steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.outcome-step-num {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--bg-dark);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.outcome-step-title {
+  font-size: 0.98rem;
+  margin-bottom: 0.55rem;
 }
 
 .ia-comparison {
@@ -1683,6 +1907,9 @@ body {
 .reflect-card:nth-child(3) { border-left-color: var(--soft); }
 .reflect-card:nth-child(4),
 .reflect-card.key { border-left-color: var(--sage-mid); }
+.reflect-card-wide {
+  grid-column: 1 / -1;
+}
 .reflect-num {
   font-family: 'Epilogue', sans-serif;
   font-weight: 800;
@@ -2384,6 +2611,12 @@ a.case-top-link svg {
   max-width: 900px;
   margin: 0 auto;
 }
+.case-hero-full-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
 .cs-hero-image + .cs-hero {
   padding-top: 3rem;
 }
@@ -2543,6 +2776,19 @@ a.case-top-link svg {
   object-fit: cover;
   object-position: top center;
   opacity: 0.42;
+}
+.work-card-header.penny-card-image img {
+  object-position: 68% center;
+  opacity: 0.62;
+}
+.work-card-header.penny-card-image::after {
+  background: linear-gradient(to bottom, rgba(15,27,45,0.03), rgba(15,27,45,0.74));
+}
+.work-card-header.bih-card-image img {
+  opacity: 0.62;
+}
+.work-card-header.bih-card-image::after {
+  background: linear-gradient(to bottom, rgba(15,27,45,0.03), rgba(15,27,45,0.74));
 }
 .work-card-header.has-image::after {
   content: '';
@@ -2725,7 +2971,7 @@ a.case-top-link svg {
   }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
   .card-grid-3, .steps-grid, .mvp-additions { grid-template-columns: 1fr; }
-  .card-grid-2, .hyp-grid, .reflect-grid, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
+  .card-grid-2, .hyp-grid, .reflect-grid, .persona-grid, .journey-grid, .outcome-steps, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
   .cs-meta { gap: 1.5rem; }
   .cs-footer { padding: 3rem 1.5rem; }
   .case-top-link-wrap { padding: 1rem 1.5rem; }
