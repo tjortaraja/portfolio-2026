@@ -862,6 +862,77 @@ body {
   max-width: 72ch;
 }
 
+.bih-dev-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+  margin-top: 1.8rem;
+  align-items: start;
+}
+
+.bih-dev-feature {
+  margin: 1.8rem 0 0;
+}
+
+.bih-dev-feature .zoom-image-trigger {
+  width: 100%;
+  max-height: none;
+  overflow: hidden;
+  background: #eef3f3;
+}
+
+.bih-dev-feature img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: top center;
+  background: #eef3f3;
+}
+
+.bih-dev-feature-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.4rem, 4vw, 3rem);
+  margin-top: 1.35rem;
+}
+
+.bih-dev-feature-copy .body-text {
+  margin: 0;
+}
+
+.bih-dev-screen {
+  margin: 0;
+}
+
+.bih-dev-screen .zoom-image-trigger {
+  height: clamp(360px, 36vw, 520px);
+  overflow: hidden;
+  background: #eef3f3;
+}
+
+.bih-dev-screen img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: top center;
+  background: #eef3f3;
+}
+
+.bih-dev-screen figcaption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bih-dev-screen figcaption span {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--bg-dark);
+}
+
 .bih-flow-sequence {
   margin-top: 1.8rem;
 }
@@ -2654,7 +2725,7 @@ a.case-top-link svg {
   }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
   .card-grid-3, .steps-grid, .mvp-additions { grid-template-columns: 1fr; }
-  .card-grid-2, .hyp-grid, .reflect-grid, .technical-scope-gallery, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
+  .card-grid-2, .hyp-grid, .reflect-grid, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
   .cs-meta { gap: 1.5rem; }
   .cs-footer { padding: 3rem 1.5rem; }
   .case-top-link-wrap { padding: 1rem 1.5rem; }
