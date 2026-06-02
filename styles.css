@@ -757,6 +757,21 @@ body {
   text-transform: uppercase;
 }
 
+.workshop-section-layout {
+  display: grid;
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+.workshop-copy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+.workshop-copy-grid .body-text:last-child {
+  margin-bottom: 0;
+}
+
 .workshop-image-stack {
   display: grid;
   gap: clamp(1rem, 2vw, 1.5rem);
@@ -3090,7 +3105,7 @@ a.case-top-link svg {
     grid-column: auto;
   }
   .card-grid-3, .steps-grid, .mvp-additions { grid-template-columns: 1fr; }
-  .card-grid-2, .hyp-grid, .reflect-grid, .persona-grid, .persona-quote-grid, .workshop-image-pair, .journey-grid, .outcome-steps, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
+  .card-grid-2, .hyp-grid, .reflect-grid, .persona-grid, .persona-quote-grid, .workshop-copy-grid, .workshop-image-pair, .journey-grid, .outcome-steps, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
   .cs-meta { gap: 1.5rem; }
   .cs-footer { padding: 3rem 1.5rem; }
   .case-top-link-wrap { padding: 1rem 1.5rem; }
