@@ -631,13 +631,47 @@ body {
   margin-top: 1.2rem;
 }
 
-.penny-stats-grid {
+.penny-full-width-image {
+  margin-top: clamp(2rem, 4vw, 4rem);
+}
+
+.penny-finding-grid {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.stats-row.penny-stats-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   margin: 0;
+}
+
+.penny-stats-grid .stat-card:nth-child(1),
+.penny-stats-grid .stat-card:nth-child(2) {
+  grid-column: span 3;
+}
+
+.penny-stats-grid .stat-card:nth-child(n+3) {
+  grid-column: span 2;
 }
 
 .penny-role-intro {
   margin-bottom: 1.5rem;
+}
+
+.penny-role-intro .role-list {
+  gap: 1rem;
+}
+
+.penny-role-intro .role-list li {
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  line-height: 1.55;
+  padding-left: 1.55rem;
+}
+
+.penny-role-intro .role-list li::before {
+  top: 0.05em;
 }
 
 .penny-detail-grid {
@@ -2957,7 +2991,7 @@ a.case-top-link svg {
   .cs-hero { padding: 7rem 1.5rem 4rem; }
   .hero-img-strip { padding: 0 1.5rem 3rem; }
   .cs-section { padding: 3.5rem 1.5rem; }
-  .two-col, .two-col.even, .context-copy-grid, .section-copy-callouts { grid-template-columns: 1fr; gap: 2rem; }
+  .two-col, .two-col.even, .context-copy-grid, .penny-finding-grid, .section-copy-callouts { grid-template-columns: 1fr; gap: 2rem; }
   .system-arch,
   .context-pair,
   .research-context,
@@ -2970,6 +3004,12 @@ a.case-top-link svg {
     order: initial;
   }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .penny-stats-grid .stat-card,
+  .penny-stats-grid .stat-card:nth-child(1),
+  .penny-stats-grid .stat-card:nth-child(2),
+  .penny-stats-grid .stat-card:nth-child(n+3) {
+    grid-column: auto;
+  }
   .card-grid-3, .steps-grid, .mvp-additions { grid-template-columns: 1fr; }
   .card-grid-2, .hyp-grid, .reflect-grid, .persona-grid, .journey-grid, .outcome-steps, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
   .cs-meta { gap: 1.5rem; }
