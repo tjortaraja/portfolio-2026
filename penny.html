@@ -107,7 +107,7 @@
             <li>Synthesised the existing qualitative and quantitative research and aligned it with four behavioural personas</li>
             <li>Facilitated a Design Thinking workshop with client and internal stakeholders</li>
             <li>Ran an internal scenarios workshop to identify the core user journeys across the full app experience</li>
-            <li>Conducted a card sort with 6 participants over 3 days to validate IA and test financial terminology</li>
+            <li>Conducted a card sort with 6 participants over 3 days to understand how customers looked for products and solutions in the app</li>
             <li>Mapped all user flows across all journeys and the Profile retention layer</li>
             <li>Created wireframes across all three feature areas, working alongside two UI designers building the brand book and design system</li>
           </ul>
@@ -212,8 +212,9 @@
       <div class="divider"></div>
       <div class="two-col even">
         <div>
-          <p class="body-text">Six participants. Three days. The results were clarifying. The terminology was not understood. Labels we thought were clear, APR, revolving credit, refinancing, credit limit, variable rate, meant nothing to the people who would be using this product. Not because they were unsophisticated. Because these are industry terms, not human terms, and we had not yet checked whether they translated.</p>
-          <p class="body-text">So we paused. You cannot build an information architecture on vocabulary that does not exist for your users. If they do not understand the words on the screen, they will not trust the product. For a near prime audience that has often experienced financial rejection and institutional suspicion, a moment of confusion is a moment of exit.</p>
+          <p class="body-text">Six participants. Three days. The results were clarifying. We used the card sort to understand how customers grouped financial needs, where they expected to find help, and what kind of product or solution they would look for after onboarding.</p>
+          <p class="body-text">That mattered because the app was not just a set of journeys. It needed an architecture customers could recognise at the moment they were deciding what to do next. If users could not see where a solution belonged, the product would feel like another financial system asking them to decode it.</p>
+          <p class="body-text">The card sort showed which concepts belonged together, which decisions needed guidance, and where a customer would expect to go after onboarding. That gave the app a clearer destination: not a dashboard full of financial terms, but a guided home for the next useful action.</p>
           <p class="body-text"><strong>The direction shifted. We were not just designing a financial app. We were designing a way to communicate.</strong></p>
           <div class="card-sort-finding">
             <p class="card-sort-label">Terms tested but not understood</p>
@@ -224,20 +225,26 @@
           <div class="context-pair" style="margin-top:1rem;">
             <div class="context-box navy">
               <p class="context-label">Product Context</p>
-              <p class="context-text">The problem was not just the labels. It was the entire way we were thinking about the interface. Users did not have the vocabulary to navigate what we had built.</p>
+              <p class="context-text">The problem was not just the journeys. It was where those journeys lived and how customers expected to find the right kind of help after onboarding.</p>
             </div>
             <div class="context-box">
               <p class="context-label">Design Principle</p>
-              <p class="context-text">Conversation became the solution. Guide users through questions rather than present them with data. Break complex actions into conversational steps. Even rejection becomes dialogue.</p>
+              <p class="context-text">Use the architecture to guide the next useful action. Help customers recognise the right route before asking them to choose a financial product.</p>
             </div>
           </div>
         </div>
         <div>
           <figure class="case-image-card tall">
-            <button class="zoom-image-trigger" type="button" aria-label="Zoom early information architecture scamp">
-              <img src="images/Penny/IMG_8418%202.JPG" alt="Whiteboard scamp showing early Penny information architecture and screen flow" data-zoomable>
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom CardSort Terminology Groupings image">
+              <img src="images/Penny/IMG_0432.jpeg" alt="Card sort groupings from the Penny research process" data-zoomable>
             </button>
-            <figcaption>Early IA scamp: testing the structure before the interface settled</figcaption>
+            <figcaption>CardSort Terminology Groupings</figcaption>
+          </figure>
+          <figure class="prototype-video-card penny-card-sort-video">
+            <video controls playsinline preload="metadata" aria-label="Card sort grouping video">
+              <source src="images/Penny/ClipNo%20Audio.mp4" type="video/mp4">
+            </video>
+            <figcaption>Cardsort Session</figcaption>
           </figure>
         </div>
       </div>
@@ -277,18 +284,20 @@
       </div>
 
       <!-- Journey 1 screens -->
-      <div class="image-marker-card wide">
-        <p class="image-marker-label">Image Marker</p>
-        <p class="image-marker-title">Journey 1 flow</p>
-        <p class="image-marker-note">Lock screen notification, borrowing summary, refinance action and repayment terms with a visual explanation of how the payment changes.</p>
-      </div>
+      <figure class="case-image-card penny-full-width-image">
+        <button class="zoom-image-trigger" type="button" aria-label="Zoom Journey 1 refinance flow image">
+          <img src="images/Penny/%E2%80%94%20FLOW%206%20-%20Refinance%20-%20%20%22Looks%20like%20you're%20going%20to%20struggle%22.png" alt="Journey 1 refinance flow for Looks like you're going to struggle" data-zoomable>
+        </button>
+        <figcaption>Journey 1 flow: Looks like you're going to struggle</figcaption>
+      </figure>
 
       <!-- Journey 2 screens -->
-      <div class="image-marker-card wide">
-        <p class="image-marker-label">Image Marker</p>
-        <p class="image-marker-title">Journey 2: Onboarding, KYC and Open Banking</p>
-        <p class="image-marker-note">Conversational onboarding, ID scan, account connection, eligibility check, approval and rejection states.</p>
-      </div>
+      <figure class="case-image-card penny-full-width-image">
+        <button class="zoom-image-trigger" type="button" aria-label="Zoom Journey 2 onboarding flow image">
+          <img src="images/Penny/%E2%80%94%20%20On%20Boarding.png" alt="Journey 2 onboarding flow for Penny" data-zoomable>
+        </button>
+        <figcaption>Journey 2 flow: Onboarding, KYC and Open Banking</figcaption>
+      </figure>
       <div class="two-col penny-detail-grid">
         <div>
           <h3 class="section-heading-sm">KYC as a trust moment</h3>
@@ -299,11 +308,12 @@
           <p class="body-text">The research showed that users were comfortable sharing banking data as long as they understood what they were getting in return. The design had to earn that comfort before asking for it. Open banking does its work in the background, experienced as better options shaped around the user's situation.</p>
         </div>
       </div>
-      <div class="image-marker-card wide">
-        <p class="image-marker-label">Image Marker</p>
-        <p class="image-marker-title">Profile layer</p>
-        <p class="image-marker-note">Credit score with local average comparison, guardrail controls, goals and credit coaching, the retention layer where Penny earns an ongoing role.</p>
-      </div>
+      <figure class="case-image-card penny-full-width-image">
+        <button class="zoom-image-trigger" type="button" aria-label="Zoom Profile Layer flow image">
+          <img src="images/Penny/%E2%80%94%20FLOW%209%20-%20Profile.png" alt="Profile layer flow for Penny" data-zoomable>
+        </button>
+        <figcaption>Profile Layer flow</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -315,8 +325,8 @@
       <div class="divider"></div>
       <div class="two-col even">
         <div>
-          <p class="body-text">The card sort did not just tell us that terminology was a problem. It told us the entire way we were thinking about the interface was wrong.</p>
-          <p class="body-text">A data led interface assumes users can interpret financial information and act on it. Our users could not, not because they were incapable, but because the language of finance had never been designed for them. Once that was visible, it changed the information architecture, the copy direction, and the structure of every journey.</p>
+          <p class="body-text">The card sort showed that customers were not looking for products in the way the business described them. They were looking for help with situations: covering a shortfall, understanding what they could afford, or knowing what to do after onboarding.</p>
+          <p class="body-text">A data led interface assumes users can interpret financial information and act on it. Our users needed the product to organise decisions around recognisable moments of need. Once that was visible, it changed the information architecture, the copy direction, and the structure of every journey.</p>
           <p class="body-text">So instead of presenting data, we asked questions. Instead of menus, we offered choices. Instead of dashboards, we built dialogues. Instead of treating rejection as a terminal state, we made it the beginning of a different conversation.</p>
           <div class="convo-box">
             <p class="convo-label">The conversational tone: sample interactions</p>
@@ -329,12 +339,12 @@
           </div>
         </div>
         <div>
-          <!-- Design principles screenshot -->
-          <div class="image-marker-card tall">
-            <p class="image-marker-label">Image Marker</p>
-            <p class="image-marker-title">Conversational UI</p>
-            <p class="image-marker-note">The three state bubble system: user message in white, Penny response in blue, agent response in green, showing the tone across representative screens.</p>
-          </div>
+          <figure class="case-image-card tall">
+            <button class="zoom-image-trigger" type="button" aria-label="Zoom Ask Penny flow image">
+              <img src="images/Penny/%E2%80%94%20FLOW%205%20-%20Ask%20Penny.png" alt="Ask Penny conversational UI flow" data-zoomable>
+            </button>
+            <figcaption>Conversational UI: Ask Penny</figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -395,10 +405,10 @@
       <div class="divider"></div>
       <div class="reflect-grid">
         <div class="reflect-card key"><div class="reflect-num">01</div><h4 class="reflect-title">Guardrails are a feature, not a limitation</h4><p class="reflect-body">Users with financial vulnerability have spent years building self protection strategies. Removing those barriers does not liberate them. It exposes them. Design that respects their boundaries is design that serves them.</p></div>
-        <div class="reflect-card"><div class="reflect-num">02</div><h4 class="reflect-title">Terminology is trust</h4><p class="reflect-body">If users do not understand the words on the screen, they will not trust the product. The card sort taught me to test language as early and as often as I test flows, ideally before committing to an IA direction at all.</p></div>
-        <div class="reflect-card"><div class="reflect-num">03</div><h4 class="reflect-title">Conversation lowers barriers</h4><p class="reflect-body">A conversational interface does not just feel friendlier. It makes complex concepts accessible. Guiding users through questions rather than presenting data gave them a path forward even when they lacked the vocabulary to ask for help.</p></div>
+        <div class="reflect-card"><div class="reflect-num">02</div><h4 class="reflect-title">Architecture is a trust signal</h4><p class="reflect-body">If users cannot find the kind of help they are looking for, they will not trust the product. The card sort taught me to test how customers understand solutions before committing to an IA direction.</p></div>
+        <div class="reflect-card"><div class="reflect-num">03</div><h4 class="reflect-title">Conversation lowers barriers</h4><p class="reflect-body">A conversational interface does not just feel friendlier. It helps customers move from a situation they recognise to a route they can act on. Guiding users through questions gave them a path forward without asking them to diagnose the product category first.</p></div>
         <div class="reflect-card"><div class="reflect-num">04</div><h4 class="reflect-title">Rejection is an opportunity</h4><p class="reflect-body">The Needs Based Borrowing journey turned loan denial into education. Showing users their credit score with local context and an improvement path transformed a dead end into a route.</p></div>
-        <div class="reflect-card reflect-card-wide"><div class="reflect-num">05</div><h4 class="reflect-title">What I would do differently: run the card sort first</h4><p class="reflect-body">The terminology issue surfaced later than it should have. Testing IA and language assumptions before wireframing would have given us more runway and challenged the entire architecture before we had committed to it.</p></div>
+        <div class="reflect-card reflect-card-wide"><div class="reflect-num">05</div><h4 class="reflect-title">What I would do differently: run the card sort first</h4><p class="reflect-body">The architecture question surfaced later than it should have. Testing how customers looked for products and solutions before wireframing would have given us more runway and challenged the structure before we had committed to it.</p></div>
       </div>
     </div>
   </section>
