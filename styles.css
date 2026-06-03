@@ -1058,7 +1058,13 @@ body {
 }
 
 .prototype-video-card figcaption {
-  padding: 0.9rem 1rem;
+  padding: 0.8rem 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage-mid);
   background: var(--surface);
 }
 
@@ -2419,6 +2425,9 @@ a.case-top-link svg {
   max-height: 560px;
   object-fit: cover;
   object-position: top center;
+}
+.card-sort-composite img {
+  max-height: none;
 }
 .case-shot-grid .case-image-card img {
   height: 480px;
