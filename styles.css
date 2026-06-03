@@ -895,7 +895,8 @@ body {
 }
 
 .convo-box {
-  margin-top: 1.4rem;
+  margin-top: 0;
+  margin-bottom: clamp(1.25rem, 2vw, 1.75rem);
   padding: 1.2rem;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -2404,6 +2405,9 @@ a.case-top-link svg {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 18px 48px rgba(15,27,45,0.1);
+}
+.case-image-card + .case-image-card {
+  margin-top: clamp(1.25rem, 2vw, 1.75rem);
 }
 .case-image-card.tall {
   max-height: 520px;
