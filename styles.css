@@ -678,6 +678,53 @@ body {
   margin-top: 2rem;
 }
 
+.penny-journey-overview {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: clamp(2.2rem, 4vw, 4rem);
+  max-width: 980px;
+}
+
+.penny-journey-overview .journey-title {
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
+}
+
+.penny-journey-overview .journey-subtitle {
+  color: var(--navy);
+  font-size: clamp(1.05rem, 1.7vw, 1.45rem);
+  font-weight: 700;
+}
+
+.penny-journey-overview .journey-body {
+  font-size: clamp(1.05rem, 1.5vw, 1.28rem);
+  max-width: 880px;
+}
+
+.penny-journey-feature {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+  margin-top: clamp(2.5rem, 4vw, 4.5rem);
+}
+
+.penny-journey-copy {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--sage-mid);
+  border-radius: 10px;
+  padding: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.penny-journey-media-stack {
+  display: grid;
+  gap: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+.penny-journey-media-stack .case-image-card + .case-image-card {
+  margin-top: 0;
+}
+
 .persona-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3118,7 +3165,7 @@ a.case-top-link svg {
     grid-column: auto;
   }
   .card-grid-3, .steps-grid, .mvp-additions { grid-template-columns: 1fr; }
-  .card-grid-2, .hyp-grid, .reflect-grid, .persona-grid, .persona-quote-grid, .workshop-copy-grid, .workshop-image-pair, .journey-grid, .outcome-steps, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
+  .card-grid-2, .hyp-grid, .reflect-grid, .persona-grid, .persona-quote-grid, .workshop-copy-grid, .workshop-image-pair, .journey-grid, .penny-journey-feature, .outcome-steps, .technical-scope-gallery, .bih-dev-gallery, .bih-dev-feature-copy, .bih-ia-comparison, .bih-profile-stack, .bih-process-card.is-split, .bih-process-media-grid.two-up, .bih-process-media-grid.docs, .bih-design-feature, .bih-package-note, .bih-handoff-card { grid-template-columns: 1fr; }
   .cs-meta { gap: 1.5rem; }
   .cs-footer { padding: 3rem 1.5rem; }
   .case-top-link-wrap { padding: 1rem 1.5rem; }
