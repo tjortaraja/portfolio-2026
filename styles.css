@@ -3176,3 +3176,197 @@ a.case-top-link svg {
   .cs-footer-inner { flex-direction: column; }
   .big-quote-wrap { padding: 4rem 1.5rem; }
 }
+
+@media (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .case-nav {
+    padding: 0.9rem 1rem;
+  }
+
+  .nav-title {
+    display: none;
+  }
+
+  .cs-hero {
+    padding: 6.5rem 1rem 3rem;
+  }
+
+  .case-hero-with-image {
+    min-height: auto;
+  }
+
+  .case-hero-with-image::before {
+    opacity: 0.16;
+  }
+
+  .cs-title {
+    font-size: clamp(2.05rem, 12vw, 3.4rem);
+    line-height: 1.02;
+  }
+
+  .cs-subtitle,
+  .body-text,
+  .role-copy-grid p,
+  .penny-journey-overview .journey-body {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .cs-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cs-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-heading {
+    font-size: clamp(1.75rem, 9vw, 2.45rem);
+    line-height: 1.12;
+    letter-spacing: 0;
+  }
+
+  .section-heading-sm {
+    font-size: clamp(1.25rem, 7vw, 1.65rem);
+  }
+
+  .divider {
+    margin-bottom: 2rem;
+  }
+
+  .pull-quote {
+    padding-left: 1rem;
+  }
+
+  .stats-row,
+  .stats-row.penny-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .stat-card {
+    padding: 1.25rem;
+  }
+
+  .stat-number {
+    font-size: clamp(2rem, 15vw, 3.1rem);
+  }
+
+  .context-box,
+  .persona-card,
+  .penny-journey-copy,
+  .outcome-step,
+  .reflect-card,
+  .val-item,
+  .card-sort-finding {
+    padding: 1.15rem;
+  }
+
+  .penny-role-intro .role-list li {
+    font-size: 1rem;
+    line-height: 1.55;
+    padding-left: 1.2rem;
+  }
+
+  .persona-quote-grid {
+    gap: 1rem;
+  }
+
+  .persona-quote-card {
+    min-height: auto;
+    padding: 1.25rem;
+  }
+
+  .persona-quote {
+    font-size: clamp(1.15rem, 6vw, 1.45rem);
+    line-height: 1.35;
+  }
+
+  .persona-quote-name,
+  .section-eyebrow,
+  .case-image-card figcaption,
+  .prototype-video-card figcaption,
+  .convo-label,
+  .card-sort-label,
+  .journey-tag {
+    letter-spacing: 0.08em;
+  }
+
+  .workshop-image-stack,
+  .penny-journey-media-stack {
+    gap: 1rem;
+  }
+
+  .workshop-image-stack .case-image-card img,
+  .workshop-image-main img,
+  .workshop-image-pair .case-image-card img {
+    aspect-ratio: auto;
+  }
+
+  .penny-journey-overview {
+    margin-top: 2.4rem;
+  }
+
+  .penny-journey-overview .journey-title {
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.08;
+  }
+
+  .penny-journey-overview .journey-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .penny-journey-feature {
+    gap: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .card-sort-terms span {
+    font-size: 0.76rem;
+  }
+
+  .prototype-video-card {
+    margin-top: 1.2rem;
+  }
+
+  .convo-box {
+    padding: 1rem;
+  }
+
+  .msg {
+    max-width: 100%;
+    font-size: 0.84rem;
+  }
+
+  .case-image-card {
+    border-radius: 10px;
+  }
+
+  .case-image-card figcaption,
+  .prototype-video-card figcaption {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+
+  .image-zoom {
+    padding: 3.5rem 1rem 1rem;
+  }
+
+  .image-zoom img,
+  .image-zoom.is-compact img {
+    width: 100%;
+  }
+
+  .image-zoom.is-zoomed img,
+  .image-zoom.is-compact.is-zoomed img {
+    width: 160vw;
+  }
+}
