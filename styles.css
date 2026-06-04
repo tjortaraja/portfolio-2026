@@ -3183,6 +3183,34 @@ a.case-top-link svg {
     overflow-x: hidden;
   }
 
+  .home-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0.95rem 1rem 0.85rem;
+  }
+
+  .home-nav .nav-logo {
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+
+  .home-nav .nav-links {
+    flex-wrap: wrap;
+    gap: 0.55rem 1rem;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .home-nav .nav-links a {
+    font-size: 0.72rem;
+    line-height: 1;
+  }
+
+  .home-hero {
+    padding-top: 8.8rem;
+  }
+
   .case-nav {
     padding: 0.9rem 1rem;
   }
